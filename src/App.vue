@@ -4,6 +4,8 @@
       <router-link to="/">Workouts</router-link>
       |
       <router-link to="/exercises">Exercises</router-link>
+      |
+      <router-link to="/signup">Signup</router-link>
     </div>
     <router-view />
   </div>
