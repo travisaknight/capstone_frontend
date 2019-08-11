@@ -5,6 +5,8 @@ import ExerciseIndex from "./views/ExerciseIndex.vue";
 import Signup from "./views/Signup.vue";
 import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
+import AddNewExercise from "./views/WorkoutNewExercise.vue";
+import WorkoutEdit from "./views/WorkoutEdit";
 
 Vue.use(Router);
 
@@ -34,8 +36,18 @@ export default new Router({
     },
     {
       path: "/logout",
-      name: "logut",
+      name: "logout",
       component: Logout
+    },
+    {
+      path: "/add_exercise",
+      name: "add_exercise",
+      component: AddNewExercise
+    },
+    {
+      path: "/workout_edit",
+      name: "workout_edit",
+      component: WorkoutEdit
     }
   ]
 });
