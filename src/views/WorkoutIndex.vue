@@ -17,7 +17,7 @@ import axios from "axios";
 export default {
   data: function() {
     return {
-      message: "GAINZ",
+      message: "Your Secret Formula",
       workouts: []
     };
   },

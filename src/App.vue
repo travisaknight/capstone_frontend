@@ -1,19 +1,9 @@
 <template>
   <div id="app">
-    <header>DO YOU EVEN LIFT?</header>
+    <header></header>
     <div id="nav">
-      <router-link to="/">Workouts</router-link>
-      |
-      <router-link to="/exercises">Exercises</router-link>
-      |
-      <router-link to="/signup">Signup</router-link>
-      |
-      <router-link to="/login">Login</router-link>
-      |
-      <router-link to="/logout">Logout</router-link>
-
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Do You Even Lift?</a>
+        <a class="navbar-brand" href="/">GAINZ</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -27,19 +17,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Home
-                <span class="sr-only">(current)</span>
-              </a>
+            <li class="nav-item">
+              <router-link to="/" class="nav-link">Your Workouts</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <router-link to="/exercises" class="nav-link">Exercises</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <router-link to="/signup" class="nav-link">Signup</router-link>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
+              <router-link to="/login" class="nav-link">Login</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/logout" class="nav-link">Logout</router-link>
+            </li>
+            <!-- <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -56,7 +49,7 @@
                 <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </nav>
@@ -67,9 +60,6 @@
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
@@ -84,5 +74,14 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.navbar-brand {
+  font-family: "Bowlby One SC", cursive;
+  font-size: 50px;
+}
+
+body {
+  font-family: "Arvo", serif;
 }
 </style>
