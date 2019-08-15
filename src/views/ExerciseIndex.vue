@@ -4,7 +4,6 @@
     <div v-for="exercise in exercises">
       <h1>{{ exercise.name }}</h1>
       <h2>{{ exercise.category }}</h2>
-      <video v-bind:src="exercise.video_url"></video>
     </div>
   </div>
 </template>
