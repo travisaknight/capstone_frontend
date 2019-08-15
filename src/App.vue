@@ -83,5 +83,6 @@
 
 body {
   font-family: "Arvo", serif;
+  background-image: url(/vintage-concrete.png);
 }
 </style>
