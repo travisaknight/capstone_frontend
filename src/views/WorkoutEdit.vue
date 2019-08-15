@@ -1,21 +1,25 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
-    <form v-on:submit.prevent="editWorkout()">
-      <ul>
-        <li v-for="error in errors">{{ error }}</li>
-      </ul>
+    <h1>Update your sets and reps.</h1>
+    <div>
       Exercise:
       <input type="text" v-model="workout.exercise" />
       Sets:
       <input type="text" v-model="workout.sets" />
       Reps:
       <input type="text" v-model="workout.reps" />
-    </form>
+      <button v-on:click="updateExercise(workout)" class="button">Update!</button>
+    </div>
   </div>
 </template>
 
-<style></style>
+<style>
+.button {
+  height: 40px;
+  width: 60px;
+  font-size: 15px;
+}
+</style>
 
 <script>
 import axios from "axios";
@@ -23,9 +27,7 @@ import axios from "axios";
 export default {
   data: function() {
     return {
-      message: "Update your workout",
-      workout: {},
-      errors: []
+      workout: {}
     };
   },
   created: function() {
@@ -34,20 +36,14 @@ export default {
     });
   },
   methods: {
-    editWorkout: function(workout) {
+    updateExercise: function(inputExercise) {
       var params = {
-        exercise: workout.exercise,
-        sets: workout.sets,
-        reps: workout.reps
+        sets: inputExercise.sets,
+        reps: inputExercise.reps
       };
-      axios
-        .patch("/api/workouts/" + workout.id, params)
-        .then(response => {
-          this.$router.push("/workouts");
-        })
-        .catch(error => {
-          this.errors = error.response.data.errors;
-        });
+      axios.patch("/api/workouts/" + inputExercise.id, params).then(response => {
+        this.$router.push("/");
+      });
     }
   }
 };

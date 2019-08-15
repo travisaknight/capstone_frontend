@@ -6,7 +6,7 @@ import Signup from "./views/Signup.vue";
 import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
 import AddNewExercise from "./views/WorkoutNewExercise.vue";
-import WorkoutEdit from "./views/WorkoutEdit";
+import WorkoutEdit from "./views/WorkoutEdit.vue";
 
 Vue.use(Router);
 
@@ -45,8 +45,8 @@ export default new Router({
       component: AddNewExercise
     },
     {
-      path: "/workout_edit",
-      name: "workout_edit",
+      path: "/exercise/:id/edit",
+      name: "workouts-edit",
       component: WorkoutEdit
     }
   ]

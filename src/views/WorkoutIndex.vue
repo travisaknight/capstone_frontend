@@ -2,14 +2,24 @@
   <div class="container index">
     <h1>{{ message }}</h1>
     <div v-for="workout in workouts">
-      <h3>{{ workout.exercise }} {{ workout.sets }} x {{ workout.reps }}</h3>
+      <h3>
+        {{ workout.exercise }} {{ workout.sets }} x {{ workout.reps }} --
+        <router-link v-bind:to="`/exercise/${workout.id}/edit`" tag="button">Edit</router-link>
+        --
+        <button class="button_edit">Delete</button>
+      </h3>
     </div>
     <router-link to="/add_exercise">Add an exercise</router-link>
-    <div><router-link to="/workout_edit">Edit this workout</router-link></div>
   </div>
 </template>
 
-<style></style>
+<style>
+button {
+  height: 40px;
+  width: 60px;
+  font-size: 15px;
+}
+</style>
 
 <script>
 import axios from "axios";
@@ -18,7 +28,9 @@ export default {
   data: function() {
     return {
       message: "Your Secret Formula",
-      workouts: []
+      workouts: [],
+      workout: {},
+      errors: []
     };
   },
   created: function() {
@@ -27,6 +39,7 @@ export default {
       console.log("Secret Formula", this.workouts);
     });
   },
+
   methods: {}
 };
 </script>
