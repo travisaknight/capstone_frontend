@@ -6,7 +6,9 @@
         {{ workout.exercise }} {{ workout.sets }} x {{ workout.reps }} --
         <router-link v-bind:to="`/exercise/${workout.id}/edit`" tag="button">Edit</router-link>
         --
-        <button class="button_edit">Delete</button>
+        <button v-on:click="destroyExercise(workout)">Delete</button>
+        <!--         <button class="button_edit">Delete</button>
+ -->
       </h3>
     </div>
     <router-link to="/add_exercise">Add an exercise</router-link>
@@ -40,6 +42,12 @@ export default {
     });
   },
 
-  methods: {}
+  methods: {
+    destroyExercise: function(workout) {
+      axios.delete("/api/workouts/" + workout.id).then(response => {
+        this.$router.push("/");
+      });
+    }
+  }
 };
 </script>
