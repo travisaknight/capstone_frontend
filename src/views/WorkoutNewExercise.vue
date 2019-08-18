@@ -6,7 +6,9 @@
         <li v-for="error in errors">{{ error }}</li>
       </ul>
       Exercise:
-      <input type="text" v-model="newExercise" />
+      <select v-model="newExercise">
+        <option v-for="exercise in exercises" :value="exercise.exercise_id">{{ exercise.name }}</option>
+      </select>
       Sets:
       <input type="text" v-model="sets" />
       Reps:
@@ -28,12 +30,18 @@ export default {
     return {
       message: "Add an exercise or two",
       newExercise: "",
+      exercises: [],
       sets: "",
       reps: "",
       errors: []
     };
   },
-  created: function() {},
+  created: function() {
+    axios.get("/api/exercises").then(response => {
+      this.exercises = response.data;
+      console.log("exercise options", this.exercises);
+    });
+  },
   methods: {
     addExercise: function() {
       var params = {
