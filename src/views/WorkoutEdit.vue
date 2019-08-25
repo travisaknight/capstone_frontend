@@ -1,16 +1,26 @@
 <template>
-  <div class="home">
-    <h1>Update your sets and reps.</h1>
-    <div>
-      Exercise:
-      <input type="text" v-model="workout.exercise" />
-      Sets:
-      <input type="text" v-model="workout.sets" />
-      Reps:
-      <input type="text" v-model="workout.reps" />
-      <button v-on:click="updateExercise(workout)" class="button">Update!</button>
+  <section class="module module-divider-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 m-auto">
+          <div class="special heading">
+            <div class="home">
+              <h1>Update your sets and reps.</h1>
+              <div>
+                Exercise:
+                <input type="text" v-model="workout.exercise" />
+                Sets:
+                <input type="text" v-model="workout.sets" />
+                Reps:
+                <input type="text" v-model="workout.reps" />
+                <button v-on:click="updateExercise(workout)" class="button">Update!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style>
