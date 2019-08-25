@@ -42,7 +42,7 @@ export default {
         reps: inputExercise.reps
       };
       axios.patch("/api/workouts/" + inputExercise.id, params).then(response => {
-        this.$router.push("/");
+        this.$router.push("/your_workout");
       });
     }
   }

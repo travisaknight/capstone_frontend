@@ -1,19 +1,27 @@
 <template>
-  <div class="home">
-    <h1>{{ message }}</h1>
-    <div v-for="exercise in exercises">
-      <h1>{{ exercise.name }}</h1>
-      <h2>{{ exercise.category }}</h2>
-      <div>
-        <iframe
-          width="560"
-          height="315"
-          v-bind:src="exercise.video_demo"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
+  <!-- Video-->
+  <div class="layout">
+    <div class="wrapper">
+      <section class="module module-divider-bottom">
+        <div class="container">
+          <div class="row">
+            <div v-for="exercise in exercises" class="col-md-12">
+              <h1>{{ exercise.name }}</h1>
+              <p>
+                <iframe
+                  width="560"
+                  height="315"
+                  v-bind:src="exercise.video_demo"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Video end-->
     </div>
   </div>
 </template>

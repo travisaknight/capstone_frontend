@@ -52,7 +52,7 @@ export default {
       axios
         .post("/api/workouts", params)
         .then(response => {
-          this.$router.push("/");
+          this.$router.push("/your_workout");
         })
         .catch(error => {
           console.log(error.response);

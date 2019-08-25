@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
+import Home from "./views/Home.vue";
 import WorkoutIndex from "./views/WorkoutIndex.vue";
 import ExerciseIndex from "./views/ExerciseIndex.vue";
 import Signup from "./views/Signup.vue";
@@ -17,6 +18,11 @@ export default new Router({
     {
       path: "/",
       name: "home",
+      component: Home
+    },
+    {
+      path: "/your_workout",
+      name: "your_workout",
       component: WorkoutIndex
     },
     {
