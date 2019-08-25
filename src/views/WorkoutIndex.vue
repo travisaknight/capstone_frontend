@@ -84,7 +84,6 @@ export default {
       console.log("Secret Formula", this.workouts);
     });
   },
-
   methods: {
     destroyExercise: function(workout) {
       axios.delete("/api/workouts/" + workout.id).then(response => {
