@@ -27,10 +27,14 @@
           <div class="row">
             <div class="col-md-8 m-auto">
               <div class="special-heading">
-                <h4>Paragraph Examples</h4>
+                <h4>YOUR SECRET FORMULA</h4>
                 <div v-for="workout in workouts">
                   <p>
-                    {{ workout.exercise }} {{ workout.sets }} x {{ workout.reps }} --
+                    {{ workout.exercise }}
+                    <input type="text" v-model="workout.sets" />
+                    sets x
+                    <input type="text" v-model="workout.reps" />
+                    reps --
                     <router-link v-bind:to="`/exercise/${workout.id}/edit`" tag="button">Edit</router-link>
                     --
                     <button v-on:click="destroyExercise(workout)">Delete</button>

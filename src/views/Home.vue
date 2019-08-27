@@ -18,8 +18,8 @@
                       Core is elegant website template based on Bootstrap 4 framework.
                     </p> -->
                     <p>
-                      <a class="btn btn-circle btn-lg btn-brand wow fadeInDown" data-wow-delay="0.9s" href="#">
-                        Let’s get started!
+                      <a class="btn btn-circle btn-lg btn-brand wow fadeInDown" data-wow-delay="0.9s" href="/login">
+                        LOGIN FOR GAINZ
                       </a>
                     </p>
                   </div>
@@ -35,8 +35,8 @@
                     <h1 class="h1 m-b-20 wow fadeInDown" data-wow-delay="0.5s">Should</h1>
                     <p class="m-b-40 wow fadeInDown" data-wow-delay="0.7s">Start with co-working way in our studio.</p>
                     <p>
-                      <a class="btn btn-circle btn-lg btn-dark wow fadeInDown" data-wow-delay="0.9s" href="#">
-                        Let’s get started!
+                      <a class="btn btn-circle btn-lg btn-dark wow fadeInDown" data-wow-delay="0.9s" href="/login">
+                        LOGIN FOR GAINZ
                       </a>
                     </p>
                   </div>

@@ -4,13 +4,49 @@
       <div class="row">
         <div class="col-md-8 m-auto">
           <div class="special heading">
-            <h1>{{ message }}</h1>
             <form v-on:submit.prevent="addExercise()">
               <ul>
                 <li v-for="error in errors">{{ error }}</li>
               </ul>
+              <section class="module module-divider-bottom">
+                <div class="container">
+                  <div class="row m-b-50">
+                    <div class="col-md-8 m-auto" v-for="exercise in exercises">
+                      <div class="special-heading">
+                        <h4>{{ exercise.name }}</h4>
+                        <input type="checkbox" v-model="exercise.selected" />
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-2 col-form-label" for="sets">SETS</label>
+                        <div class="col-10">
+                          <input class="form-control" type="text" v-model="exercise.sets" />
+                        </div>
+                      </div>
 
-              <div class="exercise_column" v-for="exercise in exercises">
+                      <div class="form-group row">
+                        <label class="col-2 col-form-label" for="example-search-input">REPS</label>
+                        <div class="col-10">
+                          <input class="form-control" type="text" v-model="exercise.reps" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <input class="btn btn-circle btn-shadow btn-gray" type="submit" value="Add Your Exercises" />
+            </form>
+
+            <!--  <form v-on:submit.prevent="addExercise">
+              <ul>
+                <li v-for="error in erros">{{ error }}</li>
+              </ul>
+            </form> -->
+            <!-- <form v-on:submit.prevent="addExercise()">
+              <ul>
+                <li v-for="error in errors">{{ error }}</li>
+              </ul>
+
+              <div class="form-group row" v-for="exercise in exercises">
                 <span>
                   <input type="checkbox" v-model="exercise.selected" />
                   <label for="exercise">{{ exercise.name }}</label>
@@ -23,10 +59,11 @@
                     <input type="text" v-model="exercise.reps" />
                   </span>
                 </div>
-              </div>
-
-              <input type="submit" value="Add Exercise" />
-            </form>
+              </div> -->
+            <!-- class="btn btn-circle btn-lg btn-brand wow fadeInDown" data-wow-delay="0.9s"
+ -->
+            <!-- <input class="btn btn-circle btn-shadow btn-gray" type="submit" value="Add Your Exercises" />
+            </form> -->
           </div>
         </div>
       </div>
