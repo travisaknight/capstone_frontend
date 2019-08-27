@@ -19,6 +19,7 @@
             <div class="inner-navigation-inline">
               <div class="inner-nav onepage-nav">
                 <ul>
+                  <li><router-link to="/create_workout">Create A Workout</router-link></li>
                   <li><router-link to="/your_workout">Your Workout</router-link></li>
                   <li><router-link to="/exercises">Exercises</router-link></li>
                   <li><router-link to="/login">Login</router-link></li>

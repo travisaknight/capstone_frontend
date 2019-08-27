@@ -31,7 +31,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-12">
-                    <h1 class="h1 wow fadeInDown">You Really...</h1>
+                    <h1 class="h1 wow fadeInDown">You Really</h1>
                     <h1 class="h1 m-b-20 wow fadeInDown" data-wow-delay="0.5s">Should</h1>
                     <p class="m-b-40 wow fadeInDown" data-wow-delay="0.7s">Start with co-working way in our studio.</p>
                     <p>
@@ -149,9 +149,9 @@
               <div class="col-md-4">
                 <div class="team-item m-b-30">
                   <div class="team-image">
-                    <img src="assets/images/team/1.jpg" alt="" />
+                    <img src="assets/images/wakanda.jpg" alt="" />
                     <div class="team-content">
-                      <h5>Jason Ford</h5>
+                      <h5>General Okoye</h5>
                       <p>Designer</p>
                     </div>
                     <div class="team-content-social">
@@ -176,9 +176,9 @@
               <div class="col-md-4">
                 <div class="team-item m-b-30">
                   <div class="team-image">
-                    <img src="assets/images/team/2.jpg" alt="" />
+                    <img src="assets/images/trav.JPG" alt="" />
                     <div class="team-content">
-                      <h5>Michael Andrews</h5>
+                      <h5>Travis Knight</h5>
                       <p>Developer</p>
                     </div>
                     <div class="team-content-social">
@@ -203,9 +203,9 @@
               <div class="col-md-4">
                 <div class="team-item m-b-30">
                   <div class="team-image">
-                    <img src="assets/images/team/3.jpg" alt="" />
+                    <img src="assets/images/Terminator.jpg" alt="" />
                     <div class="team-content">
-                      <h5>Samuel Banks</h5>
+                      <h5>The Governator</h5>
                       <p>Developer</p>
                     </div>
                     <div class="team-content-social">
