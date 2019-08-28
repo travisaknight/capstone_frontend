@@ -29,6 +29,12 @@
                           <input class="form-control" type="text" v-model="exercise.reps" />
                         </div>
                       </div>
+                      <div class="form-group row">
+                        <label class="col-2 col-form-label" for="example-search-input">WEIGHT</label>
+                        <div class="col-10">
+                          <input class="form-control" type="text" v-model="exercise.weight" />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -13,6 +13,8 @@
                 <input type="text" v-model="workout.sets" />
                 Reps:
                 <input type="text" v-model="workout.reps" />
+                Weights:
+                <input type="text" v-model="workout.weight" />
                 <button v-on:click="updateExercise(workout)" class="button">Update!</button>
               </div>
             </div>

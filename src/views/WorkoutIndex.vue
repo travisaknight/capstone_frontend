@@ -32,9 +32,11 @@
                   <p>
                     {{ workout.exercise }}
                     <input type="text" v-model="workout.sets" />
-                    sets x
+                    :sets: x
                     <input type="text" v-model="workout.reps" />
-                    reps --
+                    :reps: :weight:
+                    <input type="text" v-model="workout.weight" />
+                    --
                     <router-link v-bind:to="`/exercise/${workout.id}/edit`" tag="button">Edit</router-link>
                     --
                     <button v-on:click="destroyExercise(workout)">Delete</button>
