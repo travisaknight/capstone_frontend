@@ -41,35 +41,6 @@
               </section>
               <input class="btn btn-circle btn-shadow btn-gray" type="submit" value="Add Your Exercises" />
             </form>
-
-            <!--  <form v-on:submit.prevent="addExercise">
-              <ul>
-                <li v-for="error in erros">{{ error }}</li>
-              </ul>
-            </form> -->
-            <!-- <form v-on:submit.prevent="addExercise()">
-              <ul>
-                <li v-for="error in errors">{{ error }}</li>
-              </ul>
-
-              <div class="form-group row" v-for="exercise in exercises">
-                <span>
-                  <input type="checkbox" v-model="exercise.selected" />
-                  <label for="exercise">{{ exercise.name }}</label>
-                </span>
-                <div>
-                  <span>
-                    <label for="sets">SETS:</label>
-                    <input type="text" v-model="exercise.sets" />
-                    <label for="reps">REPS:</label>
-                    <input type="text" v-model="exercise.reps" />
-                  </span>
-                </div>
-              </div> -->
-            <!-- class="btn btn-circle btn-lg btn-brand wow fadeInDown" data-wow-delay="0.9s"
- -->
-            <!-- <input class="btn btn-circle btn-shadow btn-gray" type="submit" value="Add Your Exercises" />
-            </form> -->
           </div>
         </div>
       </div>
@@ -98,18 +69,17 @@ export default {
   },
   methods: {
     addExercise: function() {
-      // this.exercises.each do |exercise|
       var numCompleted = 0;
       var selectedExercises = this.exercises.filter(exercise => exercise.selected);
       selectedExercises.forEach(exercise => {
         var params = {
           exercise_id: exercise.exercise_id,
           sets: exercise.sets,
-          reps: exercise.reps
+          reps: exercise.reps,
+          weight: exercise.weight
         };
         console.log("sending params", params);
         axios.post("/api/workouts", params).then(response => {
-          // this.$router.push("/your_workout");
           console.log("success", response.data);
           numCompleted += 1;
           if (numCompleted >= selectedExercises.length) {
@@ -117,49 +87,6 @@ export default {
           }
         });
       });
-      // this.exercises.forEach(exercise => {
-      //   if (exercise.selected) {
-      //     var params = {
-      //       exercise_id: exercise.exercise_id,
-      //       sets: exercise.sets,
-      //       reps: exercise.reps
-      //     };
-      //     console.log("sending params", params);
-      //     axios.post("/api/workouts", params).then(response => {
-      //       // this.$router.push("/your_workout");
-      //       console.log("success", response.data);
-      //       numCompleted += 1;
-      //       if (numCompleted >= this.exercises.length) {
-      //         this.$router.push("/your_workout");
-      //       }
-      //     });
-      //     // var exercise = this.exercises[0].selected;
-      //   }
-      // });
-      // var params = {
-      //   exercise_id: exercise.id,
-      //   sets: exercise.sets,
-      //   reps: exercise.reps
-      // };
-
-      // loop through this.exercises
-      //   if exercise.selected
-      //     send post request to /api/workouts with exercise.id, exercise.sets, exercise.reps
-      // var exercise = this.exercises[0];
-      // var params = {
-      //   exercise_id: exercise.id,
-      //   sets: exercise.sets,
-      //   reps: exercise.reps
-      // };
-      // axios
-      //   .post("/api/workouts", params)
-      //   .then(response => {
-      //     this.$router.push("/your_workout");
-      //   })
-      //   .catch(error => {
-      //     console.log(error.response);
-      //     this.errors = error.response.data.errors;
-      //   });
     }
   }
 };

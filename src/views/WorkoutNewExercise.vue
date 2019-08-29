@@ -17,6 +17,8 @@
               <input type="text" v-model="sets" />
               Reps:
               <input type="text" v-model="reps" />
+              Weight:
+              <input type="text" v-model="weight" />
               <br />
 
               <input type="submit" value="Add Exercise" />
@@ -41,6 +43,7 @@ export default {
       exercises: [],
       sets: "",
       reps: "",
+      weight: "",
       errors: []
     };
   },
@@ -55,7 +58,8 @@ export default {
       var params = {
         exercise_id: this.newExercise,
         sets: this.sets,
-        reps: this.reps
+        reps: this.reps,
+        weight: this.weight
       };
       axios
         .post("/api/workouts", params)
