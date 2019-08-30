@@ -43,27 +43,6 @@
                 </div>
               </div>
             </li>
-            <!-- <li class="bg-dark bg-dark-30 bg-gradient">
-              <img src="assets/images/module-3.jpg" alt="" />
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                    <h1 class="h1 wow fadeInDown">Smart, simple</h1>
-                    <h1 class="h1 m-b-20 wow fadeInDown" data-wow-delay="0.5s">and responsive.</h1>
-                    <p class="m-b-40 wow fadeInDown" data-wow-delay="0.7s">Start with co-working way in our studio.</p>
-                    <p>
-                      <a
-                        class="btn btn-circle btn-outline btn-lg btn-white wow fadeInDown"
-                        data-wow-delay="0.9s"
-                        href="#"
-                      >
-                        Let’s get started!
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li> -->
           </ul>
           <nav class="slides-navigation">
             <a class="next" href="#"><span class="arrows arrows-arrows-slim-right"></span></a>

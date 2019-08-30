@@ -25,8 +25,7 @@
                   <li><router-link to="/login">Login</router-link></li>
                   <li><a href="#team">Logout</a></li>
                   <li><a href="#services">Signup</a></li>
-                  <li><a href="#blog">Blog</a></li>
-                  <li><a class="external" href="start.html">All Demos</a></li>
+
                   <!-- Button-->
                   <li>
                     <!-- <a class="nav-btn external" href="#">
