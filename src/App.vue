@@ -9,8 +9,8 @@
           <div class="inner-header">
             <!-- <a class="inner-brand" href="index.html"> -->
             <router-link class="inner-brand" to="/">
-              <img class="brand-dark" src="assets/images/logo.png" width="77px" alt="" />
-              <img class="brand-light" src="assets/images/logo-light.png" width="77px" alt="" />
+              <img class="brand-dark" src="assets/images/GAINZ.png" width="77px" alt="" />
+              <img class="brand-light" src="assets/images/GAINZ.png" width="77px" alt="" />
               <!-- </a> -->
             </router-link>
           </div>
@@ -25,7 +25,7 @@
                   <li><router-link to="/login">Login</router-link></li>
                   <li><a href="#team">Logout</a></li>
                   <li><a href="#services">Signup</a></li>
-
+                  <li><a class="external" href="start.html">All Demos</a></li>
                   <!-- Button-->
                   <li>
                     <!-- <a class="nav-btn external" href="#">

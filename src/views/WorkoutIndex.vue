@@ -106,14 +106,12 @@ export default {
   methods: {
     setupChart: function() {
       console.log("setupChart", this.workouts);
-      var items = [{ name: "TING", price: 99 }, { name: "something1", price: 2 }, { name: "something2", price: 3 }];
-      var labels = items.map(item => item.name);
-      var data = items.map(item => item.price);
+      var items = this.workouts;
+      var labels = items.map(item => item.exercise);
+      var data = items.map(item => item.reps);
 
       $(".core-chart").each(function(workouts) {
         $(this).appear(function() {
-          console.log("Lisa's way", this.workouts);
-
           var ctx = $(this);
           var myChart = new Chart(ctx, {
             type: "horizontalBar",
@@ -156,6 +154,7 @@ export default {
     completeExercise: function(workout) {
       var params = {
         workout_id: workout.id,
+        exercise_id: workout.exercise_id,
         sets: workout.sets,
         reps: workout.reps,
         weight: workout.weight
@@ -164,7 +163,6 @@ export default {
       axios.post("api/completes", params).then(response => {
         this.$router.push("/your_workout");
         console.log("victory", response.data);
-        console.log("failure", response.errors);
       });
     },
     destroyExercise: function(workout) {
