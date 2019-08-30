@@ -2,7 +2,7 @@
   <!-- Video-->
   <div class="layout">
     <div class="wrapper">
-      <section class="module module-divider-bottom">
+      <!-- <section class="module module-divider-bottom">
         <div class="container">
           <div class="row">
             <div v-for="exercise in exercises" class="col-md-12">
@@ -20,8 +20,66 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Video end-->
+
+      <section class="module module-divider-bottom">
+        <div class="container">
+          <div class="row m-b-100">
+            <div v-for="exercise in exercises" class="col-md-8 m-auto">
+              <div class="special-heading">
+                <h4>{{ exercise.name }}</h4>
+              </div>
+              <p>
+                <button class="btn btn-round btn-brand" type="button" data-toggle="modal" data-target="#modal-2">
+                  Launch {{ exercise.name }} Demo
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 m-auto">
+              <!--  -->
+              <div class="modal fade" id="modal-2">
+                <div v-for="exercise in exercises" class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" v-model="exercise.name">This is how you {{ exercise.name }}</h5>
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        <iframe
+                          width="420"
+                          height="250"
+                          src="http://www.youtube.com/embed/EMy5krGcoOU"
+                          frameborder="0"
+                          allowfullscreen
+                        ></iframe>
+                      </p>
+                      <p>
+                        SUP JABRONIS!?
+                      </p>
+                      <p>
+                        Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer
+                        elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.
+                        Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone
+                        Kickstarter, drinking vinegar jean shorts fixie consequat flexitarian four loko.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-round btn-gray" type="button">Close</button>
+                      <button class="btn btn-round btn-brand" type="button">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>

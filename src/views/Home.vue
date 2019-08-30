@@ -18,25 +18,27 @@
                       Core is elegant website template based on Bootstrap 4 framework.
                     </p> -->
                     <p>
-                      <a class="btn btn-circle btn-lg btn-brand wow fadeInDown" data-wow-delay="0.9s" href="/login">
-                        LOGIN FOR GAINZ
+                      <a class="btn btn-circle btn-lg btn-dark wow fadeInDown" data-wow-delay="0.9s" href="/login">
+                        THIS WAY TO GAINZ
                       </a>
                     </p>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="bg-light-30">
-              <img src="assets/images/woman_squatting.jpg" alt="" />
+            <li class="bg-dark bg-dark-30">
+              <img src="assets/images/SLED.jpg" alt="" />
               <div class="container">
                 <div class="row">
                   <div class="col-md-12">
                     <h1 class="h1 wow fadeInDown">You Really</h1>
                     <h1 class="h1 m-b-20 wow fadeInDown" data-wow-delay="0.5s">Should</h1>
-                    <p class="m-b-40 wow fadeInDown" data-wow-delay="0.7s">Start with co-working way in our studio.</p>
+                    <p class="m-b-40 wow fadeInDown" data-wow-delay="0.7s">
+                      How does one build a workout? Let me count the ways.
+                    </p>
                     <p>
                       <a class="btn btn-circle btn-lg btn-dark wow fadeInDown" data-wow-delay="0.9s" href="/login">
-                        LOGIN FOR GAINZ
+                        THIS WAY TO GAINZ
                       </a>
                     </p>
                   </div>
