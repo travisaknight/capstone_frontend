@@ -18,8 +18,12 @@
                       Core is elegant website template based on Bootstrap 4 framework.
                     </p> -->
                     <p>
-                      <a class="btn btn-circle btn-lg btn-dark wow fadeInDown" data-wow-delay="0.9s" href="/login">
-                        THIS WAY TO GAINZ
+                      <a
+                        class="btn btn-circle btn-lg btn-dark wow fadeInDown"
+                        data-wow-delay="0.9s"
+                        href="/your_workout"
+                      >
+                        Unlock the secret formula.
                       </a>
                     </p>
                   </div>
@@ -34,11 +38,15 @@
                     <h1 class="h1 wow fadeInDown">You Really</h1>
                     <h1 class="h1 m-b-20 wow fadeInDown" data-wow-delay="0.5s">Should</h1>
                     <p class="m-b-40 wow fadeInDown" data-wow-delay="0.7s">
-                      How does one build a workout? Let me count the ways.
+                      How do you build a workout? Let us be your spirit guide.
                     </p>
                     <p>
-                      <a class="btn btn-circle btn-lg btn-dark wow fadeInDown" data-wow-delay="0.9s" href="/login">
-                        THIS WAY TO GAINZ
+                      <a
+                        class="btn btn-circle btn-lg btn-dark wow fadeInDown"
+                        data-wow-delay="0.9s"
+                        href="/your_workout"
+                      >
+                        Unlock the secret formula.
                       </a>
                     </p>
                   </div>
@@ -52,6 +60,145 @@
           </nav>
         </section>
         <!-- Page Header end-->
+
+        <!-- Counters-->
+        <section class="module module-gray p-b-0">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="counter h6">
+                  <div class="counter-number">
+                    <div class="counter-timer" data-from="0" data-to="304569">0</div>
+                  </div>
+                  <div class="counter-title">Happy Clients</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="counter h6">
+                  <div class="counter-number">
+                    <div class="counter-timer" data-from="0" data-to="789354">0</div>
+                  </div>
+                  <div class="counter-title">Muscles Pumped</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="counter h6">
+                  <div class="counter-number">
+                    <div class="counter-timer" data-from="0" data-to="456738295829">0</div>
+                  </div>
+                  <div class="counter-title">Tons Lifted</div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="counter h6">
+                  <div class="counter-number">
+                    <div class="counter-timer" data-from="0" data-to="15">0</div>
+                  </div>
+                  <div class="counter-title">Chads Pwned</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Counters end-->
+
+        <!-- Team-->
+        <section class="module" id="team">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 m-auto">
+                <div class="module-title text-center">
+                  <h2>Team</h2>
+                  <p class="font-serif">We’re the best professionals in this field.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="team-item m-b-30">
+                  <div class="team-image">
+                    <img src="assets/images/wakanda.jpg" alt="" />
+                    <div class="team-content">
+                      <h5>General Okoye</h5>
+                      <p>The Intimidator</p>
+                    </div>
+                    <div class="team-content-social">
+                      <ul>
+                        <li>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa fa-vine"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="team-item m-b-30">
+                  <div class="team-image">
+                    <img src="assets/images/trav.JPG" alt="" />
+                    <div class="team-content">
+                      <h5>Travis Knight</h5>
+                      <p>The Boss</p>
+                    </div>
+                    <div class="team-content-social">
+                      <ul>
+                        <li>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa fa-vine"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="team-item m-b-30">
+                  <div class="team-image">
+                    <img src="assets/images/OK_Dwayne.jpg" alt="" />
+                    <div class="team-content">
+                      <h5>Dwayne Johnson</h5>
+                      <p>The Rock</p>
+                    </div>
+                    <div class="team-content-social">
+                      <ul>
+                        <li>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa fa-vine"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Team end-->
 
         <!-- Services-->
         <section class="module" id="about">
@@ -115,104 +262,6 @@
         </section>
         <!-- Services end-->
 
-        <!-- Team-->
-        <section class="module" id="team">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 m-auto">
-                <div class="module-title text-center">
-                  <h2>Team</h2>
-                  <p class="font-serif">We’re the best professionals in this field.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="team-item m-b-30">
-                  <div class="team-image">
-                    <img src="assets/images/wakanda.jpg" alt="" />
-                    <div class="team-content">
-                      <h5>General Okoye</h5>
-                      <p>Designer</p>
-                    </div>
-                    <div class="team-content-social">
-                      <ul>
-                        <li>
-                          <a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fa fa-dribbble"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fa fa-vine"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fa fa-instagram"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="team-item m-b-30">
-                  <div class="team-image">
-                    <img src="assets/images/trav.JPG" alt="" />
-                    <div class="team-content">
-                      <h5>Travis Knight</h5>
-                      <p>Developer</p>
-                    </div>
-                    <div class="team-content-social">
-                      <ul>
-                        <li>
-                          <a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fa fa-dribbble"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fa fa-vine"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fa fa-instagram"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="team-item m-b-30">
-                  <div class="team-image">
-                    <img src="assets/images/Terminator.jpg" alt="" />
-                    <div class="team-content">
-                      <h5>The Governator</h5>
-                      <p>Developer</p>
-                    </div>
-                    <div class="team-content-social">
-                      <ul>
-                        <li>
-                          <a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fa fa-dribbble"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fa fa-vine"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fa fa-instagram"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Team end-->
-
         <!-- News-->
         <section class="module" id="blog">
           <div class="container">
@@ -220,7 +269,7 @@
               <div class="col-md-8 m-auto">
                 <div class="module-title text-center">
                   <h2>Our News</h2>
-                  <p class="font-serif">We share our best ideas in our blog.</p>
+                  <p class="font-serif">We share THE best ideas in our blog.</p>
                 </div>
               </div>
             </div>
@@ -229,22 +278,26 @@
                 <!-- Post-->
                 <article class="post">
                   <div class="post-preview">
-                    <a href="#"><img src="assets/images/blog/1.jpg" alt="" /></a>
+                    <a
+                      href="https://www.theactivetimes.com/fitness/your-first-time/it-s-your-first-day-gym-here-s-what-do"
+                    >
+                      <img src="assets/images/baby_deadlift.jpg" alt="" />
+                    </a>
                   </div>
                   <div class="post-wrapper">
                     <div class="post-header">
-                      <h2 class="post-title"><a href="blog-single.html">Group Session Moments</a></h2>
+                      <h2 class="post-title"><a href="blog-single.html">First time in the gym?</a></h2>
                       <ul class="post-meta h5">
-                        <li>August 18, 2016</li>
+                        <li>August 30, 2019</li>
                       </ul>
                     </div>
                     <div class="post-content">
                       <p>
-                        Marianne or husbands if at stronger ye. Considered is as middletons uncommonly. Promotion
-                        perfectly ye consisted so. His chatty dining for effect ladies active.
+                        Do not fret. Everyone has to get started sometime. Here are few tips and things to think about
+                        on your first day in the gym.
                       </p>
                     </div>
-                    <div class="post-more"><a href="#">Read More →</a></div>
+                    <div class="post-more"><a href="/">Read More →</a></div>
                   </div>
                 </article>
                 <!-- Post end-->
@@ -253,22 +306,28 @@
                 <!-- Post-->
                 <article class="post">
                   <div class="post-preview">
-                    <a href="#"><img src="assets/images/blog/2.jpg" alt="" /></a>
+                    <a href="https://www.leeboycetraining.com/blog/">
+                      <img src="assets/images/squat_curls.jpg" alt="" />
+                    </a>
                   </div>
                   <div class="post-wrapper">
                     <div class="post-header">
-                      <h2 class="post-title"><a href="blog-single.html">Minimalist Chandelier</a></h2>
+                      <h2 class="post-title">
+                        <a href="blog-single.html">
+                          Curling in the Squat Rack and 5 Other Ways to Get Suplexed in the Gym.
+                        </a>
+                      </h2>
                       <ul class="post-meta h5">
-                        <li>August 18, 2016</li>
+                        <li>May 5, 2019</li>
                       </ul>
                     </div>
                     <div class="post-content">
                       <p>
-                        Depending listening delivered off new she procuring satisfied sex existence. Person plenty
-                        answer to exeter it if. Law use assistance especially resolution.
+                        Please. Please. Please. Please. Please. DO NOT curl in the squat rack. A curse will be put upon
+                        you and your family. Do not tempt the gods.
                       </p>
                     </div>
-                    <div class="post-more"><a href="#">Read More →</a></div>
+                    <div class="post-more"><a href="/">Read More →</a></div>
                   </div>
                 </article>
                 <!-- Post end-->
@@ -277,22 +336,24 @@
                 <!-- Post-->
                 <article class="post">
                   <div class="post-preview">
-                    <a href="#"><img src="assets/images/blog/3.jpg" alt="" /></a>
+                    <a href="/"><img src="assets/images/Prez_B.jpg" alt="" /></a>
                   </div>
                   <div class="post-wrapper">
                     <div class="post-header">
-                      <h2 class="post-title"><a href="blog-single.html">Green Land Sport Season</a></h2>
+                      <h2 class="post-title"><a href="blog-single.html">Finding Fun Cardio</a></h2>
                       <ul class="post-meta h5">
-                        <li>August 18, 2016</li>
+                        <li>By: President Barack Obama</li>
+                        <li>AKA: Barry Buckets</li>
+                        <li>March 17, 2015</li>
                       </ul>
                     </div>
                     <div class="post-content">
                       <p>
-                        Marianne or husbands if at stronger ye. Considered is as middletons uncommonly. Promotion
-                        perfectly ye consisted so. His chatty dining for effect ladies active.
+                        When you're president they have to let you win. Stories about dunking on my staff. What a bunch
+                        of chumps.
                       </p>
                     </div>
-                    <div class="post-more"><a href="#">Read More →</a></div>
+                    <div class="post-more"><a href="/">Read More →</a></div>
                   </div>
                 </article>
                 <!-- Post end-->
@@ -300,67 +361,16 @@
             </div>
             <div class="row m-t-50">
               <div class="col-md-12">
-                <div class="text-center"><a class="btn btn-lg btn-circle btn-brand" href="#">Visit blog</a></div>
+                <div class="text-center">
+                  <a class="btn btn-lg btn-circle btn-brand" href="#">Visit our BRAIN GAINZ blog</a>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <!-- News end-->
 
-        <!-- Counters-->
-        <section class="module module-gray p-b-0">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="counter h6">
-                  <div class="counter-number">
-                    <div class="counter-timer" data-from="0" data-to="250">0</div>
-                  </div>
-                  <div class="counter-title">Happy Clients</div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="counter h6">
-                  <div class="counter-number">
-                    <div class="counter-timer" data-from="0" data-to="132">0</div>
-                  </div>
-                  <div class="counter-title">Theme Users</div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="counter h6">
-                  <div class="counter-number">
-                    <div class="counter-timer" data-from="0" data-to="34">0</div>
-                  </div>
-                  <div class="counter-title">Awards won</div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="counter h6">
-                  <div class="counter-number">
-                    <div class="counter-timer" data-from="0" data-to="340">0</div>
-                  </div>
-                  <div class="counter-title">Total downloads</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Counters end-->
-
         <router-view />
-
-        <!-- Footer Image-->
-        <!-- <section class="module module-gray p-b-0">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="text-center"><img src="assets/images/module-18.jpg" alt="" /></div>
-              </div>
-            </div>
-          </div>
-        </section> -->
-        <!-- Footer Image end-->
 
         <a class="scroll-top" href="#top"><i class="fa fa-angle-up"></i></a>
       </div>

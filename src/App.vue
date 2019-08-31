@@ -52,18 +52,6 @@
       <div class="wrapper">
         <router-view />
 
-        <!-- Footer Image-->
-        <!--  <section class="module module-gray p-b-0">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="text-center"><img src="assets/images/module-18.jpg" alt="" /></div>
-              </div>
-            </div>
-          </div>
-        </section> -->
-        <!-- Footer Image end-->
-
         <!-- Footer-->
         <footer class="footer">
           <div class="container">
@@ -72,17 +60,16 @@
                 <!-- Text widget-->
                 <aside class="widget widget_text">
                   <div class="textwidget">
-                    <p><img src="assets/images/logo-light.png" width="100" alt="" /></p>
+                    <p><img src="assets/images/GAINZ.png" width="100" alt="" /></p>
                     <p>
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut
-                      non enim eleifend felis pretium feugiat.
+                      Here to educate you on the ways of the iron paradise.
                     </p>
                     E-mail:
-                    <a href="mailto:support@core.com">support@core.com</a>
+                    <a href="/">HalfTonDeadlift@GAINZ.com</a>
                     <br />
-                    Phone: 8 800 123 4567
+                    Phone: 1-800-BUNZ-BE-TIGHT
                     <br />
-                    Fax: 8 800 123 4567
+                    Fax: 8 800 123 4567 --- FAX? LOLOLOLOL
                     <br />
                   </div>
                 </aside>
@@ -95,16 +82,16 @@
                   </div>
                   <ul>
                     <li>
-                      <a href="#">Experience the sound of a modern and clean 360° Bluetooth Speaker.</a>
-                      <span class="post-date">May 8, 2016</span>
+                      <a href="/">Best selfie advice for the gym? DON'T.</a>
+                      <span class="post-date">August 12, 2019</span>
                     </li>
                     <li>
-                      <a href="#">Experience the sound of a modern and clean 360° Bluetooth Speaker.</a>
-                      <span class="post-date">April 7, 2016</span>
+                      <a href="/">Splitting ones' pants at the bottom of a squat: A Short Story</a>
+                      <span class="post-date">July 30, 2019</span>
                     </li>
                     <li>
-                      <a href="#">Experience the sound of a modern and clean 360° Bluetooth Speaker.</a>
-                      <span class="post-date">April 7, 2016</span>
+                      <a href="/">When people say "Judo Chop" do they really mean "Karate Chop?"</a>
+                      <span class="post-date">April 20, 2019</span>
                     </li>
                   </ul>
                 </aside>
@@ -116,21 +103,26 @@
                     <h5>Twitter Feed</h5>
                   </div>
                   <div class="twitter-feed" data-twitter="345170787868762112" data-number="1"></div>
+                  <p>
+                    Twitter is lame. Social media is just an excuse for people to curate their perfect lives and make
+                    themselves feel better. The reality is, they are desperate for deeper human connection. Anyway...
+                    Follow us on the 'Gram for some sick vids of athletic feats.
+                  </p>
                 </aside>
               </div>
               <div class="col-md-6 col-lg-3">
                 <!-- Tags widget-->
                 <aside class="widget widget_tag_cloud">
                   <div class="widget-title">
-                    <h5>Tags</h5>
+                    <h5>Sweet Hashes</h5>
                   </div>
                   <div class="tagcloud">
-                    <a href="#">Design</a>
-                    <a href="#">Travel</a>
-                    <a href="#">Startup</a>
-                    <a href="#">Music</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Responsive</a>
+                    <a href="/">#Jacked</a>
+                    <a href="/">#Getswoll</a>
+                    <a href="/">#NeverSkipLegDay</a>
+                    <a href="/">#GymLyfe</a>
+                    <a href="/">#PeoplesElbow</a>
+                    <a href="/">#WakandaForever</a>
                   </div>
                 </aside>
               </div>
@@ -142,8 +134,8 @@
                 <div class="col-md-12">
                   <div class="text-center">
                     <span class="copyright">
-                      © 2017 Core, All Rights Reserved. Design with love by
-                      <a href="http://2the.me/">2the.me</a>
+                      © 2019 GAINZ, All Rights Reserved. Design with love by T. Knight. Brought to you in part by:
+                      Actualize Coding Bootcamp
                     </span>
                   </div>
                 </div>
