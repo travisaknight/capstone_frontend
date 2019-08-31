@@ -105,8 +105,8 @@ export default {
   },
   methods: {
     setupChart: function() {
-      console.log("setupChart", this.workouts);
-      var items = this.workouts;
+      console.log("setupChart", this.completes);
+      var items = this.completes;
       var labels = items.map(item => item.exercise);
       var data = items.map(item => item.reps);
 
