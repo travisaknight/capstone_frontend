@@ -31,20 +31,21 @@
                 <h4>{{ exercise.name }}</h4>
               </div>
               <p>
-                <button class="btn btn-round btn-brand" type="button" data-toggle="modal" data-target="#modal-2">
+                <button
+                  class="btn btn-round btn-brand"
+                  type="button"
+                  data-toggle="modal"
+                  v-bind:data-target="`#modal-${exercise.exercise_id}`"
+                >
                   Launch {{ exercise.name }} Demo
                 </button>
               </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-8 m-auto">
-              <!--  -->
-              <div class="modal fade" id="modal-2">
-                <div v-for="exercise in exercises" class="modal-dialog">
+
+              <div class="modal fade" v-bind:id="`modal-${exercise.exercise_id}`">
+                <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" v-model="exercise.name">This is how you {{ exercise.name }}</h5>
+                      <h5 class="modal-title">This is how you</h5>
                       <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span>&times;</span>
                       </button>
@@ -54,7 +55,7 @@
                         <iframe
                           width="420"
                           height="250"
-                          src="http://www.youtube.com/embed/EMy5krGcoOU"
+                          :src="exercise.video_demo"
                           frameborder="0"
                           allowfullscreen
                         ></iframe>

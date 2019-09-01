@@ -27,7 +27,7 @@
             <div class="special-heading">
               <h1>{{ workout.exercise }}</h1>
             </div>
-            <form v-on:submit.prevent="completeExercise()" class="form-inline">
+            <form class="form-inline">
               <ul>
                 <li v-for="error in errors">{{ error }}</li>
               </ul>
@@ -109,6 +109,7 @@ export default {
       var items = this.completes;
       var labels = items.map(item => item.exercise);
       var data = items.map(item => item.reps);
+      // var data = completedReps + items.map(item => item.reps);
 
       $(".core-chart").each(function(workouts) {
         $(this).appear(function() {
