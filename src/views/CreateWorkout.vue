@@ -81,6 +81,7 @@ export default {
           reps: exercise.reps,
           weight: exercise.weight
         };
+        var upperBody = this.exercise.category;
         console.log("sending params", params);
         axios.post("/api/workouts", params).then(response => {
           console.log("success", response.data);

@@ -1,34 +1,12 @@
 <template>
-  <!-- Video-->
   <div class="layout">
     <div class="wrapper">
-      <!-- <section class="module module-divider-bottom">
-        <div class="container">
-          <div class="row">
-            <div v-for="exercise in exercises" class="col-md-12">
-              <h1>{{ exercise.name }}</h1>
-              <p>
-                <iframe
-                  width="560"
-                  height="315"
-                  v-bind:src="exercise.video_demo"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- Video end-->
-
       <section class="module module-divider-bottom">
         <div class="container">
           <div class="row m-b-100">
             <div v-for="exercise in exercises" class="col-md-8 m-auto">
               <div class="special-heading">
-                <h3>{{ exercise.name }}</h3>
+                <h2>{{ exercise.name }}</h2>
                 <div>
                   <h4>{{ exercise.category }}</h4>
                 </div>
@@ -66,12 +44,7 @@
                       <h3>
                         {{ exercise.name }}
                       </h3>
-                      <p>
-                        Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer
-                        elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.
-                        Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone
-                        Kickstarter, drinking vinegar jean shorts fixie consequat flexitarian four loko.
-                      </p>
+                      <p>{{ exercise.description }}</p>
                     </div>
                     <div class="modal-footer">
                       <button class="btn btn-round btn-gray" type="button">Close</button>
