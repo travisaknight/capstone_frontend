@@ -46,7 +46,7 @@
                   <h4>2 Core Exercises</h4>
                 </div>
                 <p>
-                  Choose two core exercises that compliment each other like the pallof press and the plank. Any corework
+                  Choose two core exercises that complement each other like the pallof press and the plank. Any corework
                   that requires a hold (any plank variation) should be held between 20-30 seconds. If the exercise
                   requires reps, again, stick to 3 sets of 8-10. Core exercises can be done in between sets of your
                   upper and lower body sets to save time.
@@ -99,40 +99,12 @@
                     </div>
                   </div>
                 </section>
-                <!-- <section class="module module-divider-bottom">
-                    <div class="container">
-                      <div class="row m-b-50">
-                        <div class="col-md-8 m-auto" v-for="exercise in exercises">
-                          <div class="special-heading">
-                            <h3>{{ exercise.name }}</h3>
-                            <input type="checkbox" v-model="exercise.selected" />
-                          </div>
-                          <div class="special-heading">
-                            <h4>{{ exercise.category }}</h4>
-                          </div>
-                          <div class="form-group row">
-                            <label class="col-2 col-form-label" for="sets">SETS</label>
-                            <div class="col-10">
-                              <input class="form-control" type="text" v-model="exercise.sets" />
-                            </div>
-                          </div>
 
-                          <div class="form-group row">
-                            <label class="col-2 col-form-label" for="example-search-input">REPS</label>
-                            <div class="col-10">
-                              <input class="form-control" type="text" v-model="exercise.reps" />
-                            </div>
-                          </div>
-                          <div class="form-group row">
-                            <label class="col-2 col-form-label" for="example-search-input">WEIGHT</label>
-                            <div class="col-10">
-                              <input class="form-control" type="text" v-model="exercise.weight" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section> -->
+                <p v-if="evaluationState === 'UpperSolid'">Nice well balanced workout!</p>
+                <p v-if="evaluationState === 'MORE-LOWER'">Need more lowers!</p>
+                <p v-if="evaluationState === 'MORE-UPPER'">Need more uppers!</p>
+                <p v-if="evaluationState === 'MORE-CORE'">Need more core!</p>
+                <p v-if="evaluationState === 'BAD'">Awful!</p>
                 <input class="btn btn-circle btn-shadow btn-gray" type="submit" value="Add Your Exercises" />
               </form>
             </div>
@@ -166,6 +138,7 @@ export default {
     addExercise: function() {
       var numCompleted = 0;
       var selectedExercises = this.exercises.filter(exercise => exercise.selected);
+
       selectedExercises.forEach(exercise => {
         var params = {
           exercise_id: exercise.exercise_id,
@@ -174,8 +147,6 @@ export default {
           reps: exercise.reps,
           weight: exercise.weight
         };
-        var upperLowerMinimum = 3;
-        var coreMinimum = 2;
 
         console.log("sending params", params);
         axios.post("/api/workouts", params).then(response => {
@@ -186,6 +157,58 @@ export default {
           }
         });
       });
+    }
+  },
+  computed: {
+    evaluationState: function() {
+      var selectedExercises = this.exercises.filter(exercise => exercise.selected);
+
+      var upperCount = 0;
+      var lowerCount = 0;
+      var coreCount = 0;
+      selectedExercises.forEach(exercise => {
+        if (exercise.category_id === 1) {
+          upperCount++;
+        } else if (exercise.category_id === 2) {
+          lowerCount++;
+        } else if (exercise.category_id === 3) {
+          coreCount++;
+        }
+      });
+
+      if (upperCount >= 3) {
+        return "UpperSolid";
+      } else if (upperCount === 2) {
+        return "OneMoreUpper";
+      } else if (upperCount <= 1) {
+        return "MoreUpper";
+      } else if (lowerCount >= 3) {
+        return "OneMoreLower";
+      } else if (lowerCount === 2) {
+        return "TwoMoreLower";
+      } else if (lowerCount <= 1) {
+        return "MoreLower";
+      } else if (upperCount <= 1) {
+        return "TwoMoreUpper";
+      } else {
+        return "BAD";
+      }
+
+      // if (selectedExercises.length > 2) {
+      //   return "AWESOME";
+      // } else if (selectedExercises.length > 1) {
+      //   return "OKAY";
+      // } else {
+      //   return "TERRIBLE";
+      // }
+      //   if (upperCount >= 3 && lowerCount > 0 && coreCount > 0) {
+      //     return "Nailed it!";
+      //   } else if (upperCount === 2 && lowerCount === 0) {
+      //     return "One more upper";
+      //   } else if (upperCount) {
+      //     return "BAD";
+      //   }
+      // }
     }
   }
 };

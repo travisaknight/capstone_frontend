@@ -9,6 +9,7 @@ import Logout from "./views/Logout.vue";
 import AddNewExercise from "./views/WorkoutNewExercise.vue";
 import WorkoutEdit from "./views/WorkoutEdit.vue";
 import CreateWorkout from "./views/CreateWorkout.vue";
+import Calendar from "./views/Calendar.vue";
 
 Vue.use(Router);
 
@@ -60,6 +61,11 @@ export default new Router({
       path: "/create_workout",
       name: "create-workout",
       component: CreateWorkout
+    },
+    {
+      path: "/workout_calendar",
+      name: "workout-calendar",
+      component: Calendar
     }
   ]
 });

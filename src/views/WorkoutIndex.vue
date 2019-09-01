@@ -123,7 +123,6 @@ export default {
             type: "horizontalBar",
             data: {
               labels: labels,
-              workouts: [],
               datasets: [
                 {
                   data: data,
@@ -146,6 +145,11 @@ export default {
               scales: {
                 yAxes: [
                   {
+                    // type: "time",
+                    // time: {
+                    //   unit: "month"
+                    // },
+
                     ticks: {
                       beginAtZero: true
                     }
