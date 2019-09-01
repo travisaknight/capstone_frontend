@@ -28,7 +28,10 @@
           <div class="row m-b-100">
             <div v-for="exercise in exercises" class="col-md-8 m-auto">
               <div class="special-heading">
-                <h4>{{ exercise.name }}</h4>
+                <h3>{{ exercise.name }}</h3>
+                <div>
+                  <h4>{{ exercise.category }}</h4>
+                </div>
               </div>
               <p>
                 <button
@@ -45,7 +48,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title">This is how you</h5>
+                      <h5 class="modal-title">This is how you {{ exercise.name }}</h5>
                       <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span>&times;</span>
                       </button>
@@ -60,9 +63,9 @@
                           allowfullscreen
                         ></iframe>
                       </p>
-                      <p>
-                        SUP JABRONIS!?
-                      </p>
+                      <h3>
+                        {{ exercise.name }}
+                      </h3>
                       <p>
                         Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer
                         elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.

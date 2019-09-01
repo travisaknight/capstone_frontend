@@ -13,7 +13,10 @@
                   <div class="row m-b-50">
                     <div class="col-md-8 m-auto" v-for="exercise in exercises">
                       <div class="special-heading">
-                        <h4>{{ exercise.name }}</h4>
+                        <h3>{{ exercise.name }}</h3>
+                        <div>
+                          <h4>{{ exercise.category }}</h4>
+                        </div>
                         <input type="checkbox" v-model="exercise.selected" />
                       </div>
                       <div class="form-group row">

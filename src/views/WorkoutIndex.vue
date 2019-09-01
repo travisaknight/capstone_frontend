@@ -100,13 +100,17 @@ export default {
     axios.get("/api/completes").then(response => {
       this.completes = response.data;
       console.log("COMPLETED", this.completes);
+    });
+    axios.get("/api/completes_sum").then(response => {
+      this.completeSum = response.data;
+      console.log("Sum Of Reps", this.completeSum);
       this.setupChart();
     });
   },
   methods: {
     setupChart: function() {
-      console.log("setupChart", this.completes);
-      var items = this.completes;
+      console.log("setupChart", this.completeSum);
+      var items = this.completeSum;
       var labels = items.map(item => item.exercise);
       var data = items.map(item => item.reps);
       // var data = completedReps + items.map(item => item.reps);
