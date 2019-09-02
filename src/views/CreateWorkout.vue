@@ -54,6 +54,50 @@
               </div>
             </div>
           </div>
+
+          <section class="module">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="alert alert-brand">
+                    <strong>Heads up!</strong>
+                    This alert needs
+                    <a class="alert-link" href="#">your attention</a>
+                    , but it's not super important.
+                  </div>
+                  <div class="alert alert-success">
+                    <strong>Well done!</strong>
+                    <p v-if="evaluationState === 'UpperSolid'"></p>
+                    You built a balanced workout! GO GET AFTER IT!
+                  </div>
+                  <div class="alert alert-info">
+                    <strong>Heads up!</strong>
+                    This alert needs
+                    <a class="alert-link" href="#">your attention</a>
+                    , but it's not super important.
+                  </div>
+                  <div class="alert alert-warning">
+                    <strong>Warning!</strong>
+                    Better check yourself,
+                    <a class="alert-link" href="#">you're not</a>
+                    looking too good.
+                  </div>
+                  <div class="alert alert-danger">
+                    <strong>DO YOU EVEN LIFT?!</strong>
+                    <p v-if="evaluationState === 'BAD'">Awful!</p>
+                    Don't forget your 2 core and 3 upper and lower body exercises!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <p v-if="evaluationState === 'UpperSolid'">Nice well balanced workout!</p>
+          <p v-if="evaluationState === 'OneMoreUpper'">One upper body exercise away.</p>
+          <p v-if="evaluationState === 'MoreUpper'">You need 3 upper body exercises.</p>
+          <p v-if="evaluationState === 'OneMoreLower'">One lower body exercise away.</p>
+          <p v-if="evaluationState === 'BAD'">Awful!</p>
+
           <div class="row m-b-50">
             <div class="special heading">
               <form v-on:submit.prevent="addExercise()">
@@ -68,6 +112,48 @@
                         <input type="checkbox" v-model="exercise.selected" />
                         <div>
                           <h4>{{ exercise.category }}</h4>
+                        </div>
+                      </div>
+                      <p>
+                        <button
+                          class="btn btn-round btn-brand"
+                          type="button"
+                          data-toggle="modal"
+                          v-bind:data-target="`#modal-${exercise.exercise_id}`"
+                        >
+                          {{ exercise.name }} demo.
+                        </button>
+                      </p>
+
+                      <div class="modal fade" v-bind:id="`modal-${exercise.exercise_id}`">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">This is how you {{ exercise.name }}</h5>
+                              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span>&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <p>
+                                <iframe
+                                  width="420"
+                                  height="250"
+                                  :src="exercise.video_demo"
+                                  frameborder="0"
+                                  allowfullscreen
+                                ></iframe>
+                              </p>
+                              <h3>
+                                {{ exercise.name }}
+                              </h3>
+                              <p>{{ exercise.description }}</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-round btn-gray" type="button">Close</button>
+                              <button class="btn btn-round btn-brand" type="button">Save changes</button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <form class="form-inline">
@@ -100,11 +186,6 @@
                   </div>
                 </section>
 
-                <p v-if="evaluationState === 'UpperSolid'">Nice well balanced workout!</p>
-                <p v-if="evaluationState === 'MORE-LOWER'">Need more lowers!</p>
-                <p v-if="evaluationState === 'MORE-UPPER'">Need more uppers!</p>
-                <p v-if="evaluationState === 'MORE-CORE'">Need more core!</p>
-                <p v-if="evaluationState === 'BAD'">Awful!</p>
                 <input class="btn btn-circle btn-shadow btn-gray" type="submit" value="Add Your Exercises" />
               </form>
             </div>
@@ -119,6 +200,7 @@
 
 <script>
 import axios from "axios";
+import Vue2Filters from "vue2-filters";
 
 export default {
   data: function() {
