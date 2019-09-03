@@ -346,22 +346,6 @@ export default {
       // } else {
       //   return "TryHarder";
       // }
-
-      // if (selectedExercises.length > 2) {
-      //   return "AWESOME";
-      // } else if (selectedExercises.length > 1) {
-      //   return "OKAY";
-      // } else {
-      //   return "TERRIBLE";
-      // }
-      //   if (upper >= 3 && lower > 0 && core > 0) {
-      //     return "Nailed it!";
-      //   } else if (upper === 2 && lower === 0) {
-      //     return "One more upper";
-      //   } else if (upper) {
-      //     return "BAD";
-      //   }
-      // }
     }
   }
 };

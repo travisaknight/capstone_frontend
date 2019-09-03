@@ -9,13 +9,7 @@
             <div class="page-title-captions">
               <h1 class="h5">YOUR SECRET FORMULA!</h1>
             </div>
-            <div class="page-title-secondary">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Shortcodes</a></li>
-                <li class="breadcrumb-item active">Typography</li>
-              </ol>
-            </div>
+            <div class="page-title-secondary"></div>
           </div>
         </div>
       </section>
