@@ -5,7 +5,7 @@
         <div class="container">
           <div class="row-page-title">
             <div class="page-title-captions">
-              <h1 class="h5">YOUR SECRET FORMULA!</h1>
+              <h1 class="h5">Formula Ingredients</h1>
             </div>
             <div class="page-title-secondary"></div>
           </div>
@@ -13,43 +13,74 @@
       </section>
       <section class="module module-divider-bottom">
         <div class="container">
-          <div class="row">
-            <div class="row m-b-40">
-              <div class="col-md-4">
-                <div class="special-heading">
-                  <h4>3 Upper Body Exercises</h4>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 m-auto">
+                <div class="special-heading m-b-40">
+                  <h4>The Build</h4>
                 </div>
-                <p>
-                  Choose one pulling exercise like a pull up or row and then choose one pushing exercise like push ups
-                  or overhead press. Your third exercise could be any accessory exercise you'd like to work. Triceps
-                  push down, biceps curl, lateral raises, etc. Stick to 3 sets of 8-10 to start.
-                </p>
-              </div>
-              <div class="col-md-4">
-                <div class="special-heading">
-                  <h4>3 Lower Body Exercises</h4>
+                <!-- Tabs-->
+                <ul class="nav nav-tabs justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#tab-7" data-toggle="tab">General Weight Loss GAINZ</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="#tab-8" data-toggle="tab">Strong GAINZ</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#tab-9" data-toggle="tab">Big GAINZ</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane in active" id="tab-7">
+                    <h4>3 Upper Body Exercises</h4>
+                    <p>
+                      Choose one pulling exercise like a pull up or row and then choose one pushing exercise like push
+                      ups or overhead press. Your third exercise could be any accessory exercise you'd like to work.
+                      Triceps push down, biceps curl, lateral raises, etc. Stick to 3 sets of 8-10 to start.
+                    </p>
+                    <h4>3 Lower Body Exercises</h4>
+                    <p>
+                      Choose one knee-dominant lower body exercise like a squat or lunge then choose one hip dominant
+                      exercise like a Romanian Deadlift or conventional deadlift. Your third choice could be an
+                      accessory like single leg squats or hip bridges. Stick to 3 sets of 8-10 to start.
+                    </p>
+                    <h4>2 Core Exercises</h4>
+                    <p>
+                      Choose two core exercises that complement each other like the pallof press and the plank. Any
+                      corework that requires a hold (any plank variation) should be held between 20-30 seconds. If the
+                      exercise requires reps, again, stick to 3 sets of 8-10. Core exercises can be done in between sets
+                      of your upper and lower body sets to save time.
+                    </p>
+                  </div>
+                  <div class="tab-pane" id="tab-8">
+                    <p>
+                      Day handsome addition horrible sensible goodness two contempt. Evening for married his account
+                      removal. Estimable me disposing of be moonlight cordially curiosity. Delay rapid joy share allow
+                      age manor six. Went why far saw many knew.
+                    </p>
+                    <p>
+                      At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande
+                      lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+                      coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan
+                      lingues.
+                    </p>
+                  </div>
+                  <div class="tab-pane" id="tab-9">
+                    <p>
+                      Day handsome addition horrible sensible goodness two contempt. Evening for married his account
+                      removal. Estimable me disposing of be moonlight cordially curiosity. Delay rapid joy share allow
+                      age manor six. Went why far saw many knew.
+                    </p>
+                    <p>
+                      Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit
+                      seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip
+                      veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone Kickstarter,
+                      drinking vinegar jean shorts fixie consequat flexitarian four loko.
+                    </p>
+                  </div>
                 </div>
-                <p>
-                  Choose one knee-dominant lower body exercise like a squat or lunge then choose one hip dominant
-                  exercise like a Romanian Deadlift or conventional deadlift. Your third choice could be an accessory
-                  like single leg squats or hip bridges. Stick to 3 sets of 8-10 to start.
-                </p>
-              </div>
-              <div class="col-md-4">
-                <div class="special-heading">
-                  <h4>2 Core Exercises</h4>
-                </div>
-                <p>
-                  Choose two core exercises that complement each other like the pallof press and the plank. Any corework
-                  that requires a hold (any plank variation) should be held between 20-30 seconds. If the exercise
-                  requires reps, again, stick to 3 sets of 8-10. Core exercises can be done in between sets of your
-                  upper and lower body sets to save time.
-                </p>
               </div>
             </div>
           </div>
 
-          <!--    <section class="module">
+          <!-- <section class="module">
             <div class="container">
               <div class="row">
                 <div class="col-sm-12">
