@@ -3,8 +3,26 @@
     <div class="wrapper">
       <section class="module module-divider-bottom">
         <div class="container">
+          <div class="row m-b-50">
+            <div class="col-md-8 m-auto">
+              <div class="special-heading">
+                <h4>Search by Category or Exercise</h4>
+              </div>
+              <form class="form-inline">
+                <label class="sr-only" for="inlineFormInput">Name</label>
+                <input
+                  class="form-control mb-2 mr-sm-2 mb-sm-0"
+                  id="inlineFormInput"
+                  v-model="searchFilter"
+                  type="text"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
           <div class="row m-b-100">
-            <div v-for="exercise in exercises" class="col-md-8 m-auto">
+            <div v-for="exercise in filterBy(exercises, searchFilter, 'category', 'name')" class="col-md-8 m-auto">
               <div class="special-heading">
                 <h2>{{ exercise.name }}</h2>
                 <div>
@@ -68,9 +86,11 @@ import axios from "axios";
 import Vue2Filters from "vue2-filters";
 
 export default {
+  mixins: [Vue2Filters.mixin],
   data: function() {
     return {
       message: "Here be exercises",
+      searchFilter: "",
       exercises: []
     };
   },

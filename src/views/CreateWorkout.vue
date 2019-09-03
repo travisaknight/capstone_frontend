@@ -7,13 +7,7 @@
             <div class="page-title-captions">
               <h1 class="h5">YOUR SECRET FORMULA!</h1>
             </div>
-            <div class="page-title-secondary">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Shortcodes</a></li>
-                <li class="breadcrumb-item active">Typography</li>
-              </ol>
-            </div>
+            <div class="page-title-secondary"></div>
           </div>
         </div>
       </section>
@@ -55,7 +49,7 @@
             </div>
           </div>
 
-          <section class="module">
+          <!--    <section class="module">
             <div class="container">
               <div class="row">
                 <div class="col-sm-12">
@@ -90,7 +84,9 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
+
+          <!-- Forms-->
 
           <p v-if="evaluationState === 'UpperSolid'">Nice well balanced workout!</p>
           <p v-if="evaluationState === 'OneMoreUpper'">One upper body exercise away.</p>
@@ -98,6 +94,11 @@
           <p v-if="evaluationState === 'OneMoreLower'">One lower body exercise away.</p>
           <p v-if="evaluationState === 'BAD'">Awful!</p>
 
+          <div v-if="evaluationState === 'BAD'" class="alert alert-danger">
+            <strong>DO YOU EVEN LIFT?!</strong>
+            <p>Awful!</p>
+            Don't forget your 2 core and 3 upper and lower body exercises!
+          </div>
           <div class="row m-b-50">
             <div class="special heading">
               <form v-on:submit.prevent="addExercise()">
@@ -105,8 +106,29 @@
                   <li v-for="error in errors">{{ error }}</li>
                 </ul>
                 <section>
+                  <div class="container">
+                    <div class="row m-b-50">
+                      <div class="col-md-8 m-auto">
+                        <div class="special-heading">
+                          <h4>Search by Category or Exercise</h4>
+                        </div>
+                        <form class="form-inline">
+                          <label class="sr-only" for="inlineFormInput">Name</label>
+                          <input
+                            class="form-control mb-2 mr-sm-2 mb-sm-0"
+                            id="inlineFormInput"
+                            v-model="searchFilter"
+                            type="text"
+                          />
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                   <div class="row m-b-50">
-                    <div v-for="exercise in exercises" class="col-md-8 m-auto">
+                    <div
+                      v-for="exercise in filterBy(exercises, searchFilter, 'category', 'name')"
+                      class="col-md-8 m-auto"
+                    >
                       <div class="special-heading">
                         <h1>{{ exercise.name }}</h1>
                         <input type="checkbox" v-model="exercise.selected" />
@@ -203,10 +225,12 @@ import axios from "axios";
 import Vue2Filters from "vue2-filters";
 
 export default {
+  mixins: [Vue2Filters.mixin],
   data: function() {
     return {
       message: "Add an exercise",
       exercises: [],
+      searchFilter: "",
       errors: []
     };
   },
