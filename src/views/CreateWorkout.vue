@@ -92,7 +92,7 @@
                   </div>
                   <div class="alert alert-success">
                     <strong>Well done!</strong>
-                    <p v-if="evaluationState === 'UpperSolid'"></p>
+                    <p v-if="counts === 'UpperSolid'"></p>
                     You built a balanced workout! GO GET AFTER IT!
                   </div>
                   <div class="alert alert-info">
@@ -109,7 +109,7 @@
                   </div>
                   <div class="alert alert-danger">
                     <strong>DO YOU EVEN LIFT?!</strong>
-                    <p v-if="evaluationState === 'BAD'">Awful!</p>
+                    <p v-if="counts === 'BAD'">Awful!</p>
                     Don't forget your 2 core and 3 upper and lower body exercises!
                   </div>
                 </div>
@@ -119,16 +119,24 @@
 
           <!-- Forms-->
 
-          <p v-if="evaluationState === 'UpperSolid'">Nice well balanced workout!</p>
-          <p v-if="evaluationState === 'OneMoreUpper'">One upper body exercise away.</p>
-          <p v-if="evaluationState === 'MoreUpper'">You need 3 upper body exercises.</p>
-          <p v-if="evaluationState === 'OneMoreLower'">One lower body exercise away.</p>
-          <p v-if="evaluationState === 'BAD'">Awful!</p>
+          <div>
+            <p v-if="counts.upper >= 3">Hit the required upper body goals!</p>
+            <p v-if="counts.upper === 2">One upper body exercise away.</p>
+            <p v-if="counts.upper < 2">You need 3 upper body exercises.</p>
+          </div>
 
-          <div v-if="evaluationState === 'BAD'" class="alert alert-danger">
-            <strong>DO YOU EVEN LIFT?!</strong>
-            <p>Awful!</p>
-            Don't forget your 2 core and 3 upper and lower body exercises!
+          <div>
+            <p v-if="counts.lower >= 3">Those legs got some work to do!</p>
+            <p v-if="counts.lower === 2">One more lower body exercise away!</p>
+            <p v-if="counts.lower < 2">3 lower body exercises required. No chicken legs!</p>
+          </div>
+          <div>
+            <p v-if="counts.core >= 2">Core is noice and toight!</p>
+            <p v-if="counts.core === 1">One more core exercise needed.</p>
+            <p v-if="counts.core < 1">You need 2 core exercises!</p>
+          </div>
+          <div>
+            <p v-if="counts.core === 2 && counts.lower === 3 && counts.upper">THAT'S A SOLID WORKOUT, YO!</p>
           </div>
           <div class="row m-b-50">
             <div class="special heading">
@@ -297,39 +305,47 @@ export default {
     }
   },
   computed: {
-    evaluationState: function() {
+    counts: function() {
       var selectedExercises = this.exercises.filter(exercise => exercise.selected);
 
-      var upperCount = 0;
-      var lowerCount = 0;
-      var coreCount = 0;
+      var upper = 0;
+      var lower = 0;
+      var core = 0;
       selectedExercises.forEach(exercise => {
         if (exercise.category_id === 1) {
-          upperCount++;
+          upper++;
         } else if (exercise.category_id === 2) {
-          lowerCount++;
+          lower++;
         } else if (exercise.category_id === 3) {
-          coreCount++;
+          core++;
         }
       });
 
-      if (upperCount >= 3) {
-        return "UpperSolid";
-      } else if (upperCount === 2) {
-        return "OneMoreUpper";
-      } else if (upperCount <= 1) {
-        return "MoreUpper";
-      } else if (lowerCount >= 3) {
-        return "OneMoreLower";
-      } else if (lowerCount === 2) {
-        return "TwoMoreLower";
-      } else if (lowerCount <= 1) {
-        return "MoreLower";
-      } else if (upperCount <= 1) {
-        return "TwoMoreUpper";
-      } else {
-        return "BAD";
-      }
+      return { upper, lower, core };
+
+      // if (upper >= 3) {
+      //   return "UpperSolid";
+      // } else if (upper === 2) {
+      //   return "OneMoreUpper";
+      // } else if (upper <= 1) {
+      //   return "MoreUpper";
+      // } else if (lower >= 3) {
+      //   return "LowerSolid";
+      // } else if (lower === 2) {
+      //   return "OneMoreLower";
+      // } else if (lower <= 1) {
+      //   return "MoreLower";
+      // } else if (core >= 2) {
+      //   return "CoreSolid";
+      // } else if (core === 1) {
+      //   return "OneMoreCore";
+      // } else if (core < 1) {
+      //   return "MoreCore";
+      // } else if (upper === 3 && lower === 3 && core === 2) {
+      //   return "Balance";
+      // } else {
+      //   return "TryHarder";
+      // }
 
       // if (selectedExercises.length > 2) {
       //   return "AWESOME";
@@ -338,11 +354,11 @@ export default {
       // } else {
       //   return "TERRIBLE";
       // }
-      //   if (upperCount >= 3 && lowerCount > 0 && coreCount > 0) {
+      //   if (upper >= 3 && lower > 0 && core > 0) {
       //     return "Nailed it!";
-      //   } else if (upperCount === 2 && lowerCount === 0) {
+      //   } else if (upper === 2 && lower === 0) {
       //     return "One more upper";
-      //   } else if (upperCount) {
+      //   } else if (upper) {
       //     return "BAD";
       //   }
       // }
