@@ -5,7 +5,7 @@
         <div class="container">
           <div class="row-page-title">
             <div class="page-title-captions">
-              <h1 class="h5">Formula Ingredients</h1>
+              <h1 class="h5">If you build it... GAINZ will come.</h1>
             </div>
             <div class="page-title-secondary"></div>
           </div>
@@ -13,130 +13,113 @@
       </section>
       <section class="module module-divider-bottom">
         <div class="container">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 m-auto">
-                <div class="special-heading m-b-40">
-                  <h4>The Build</h4>
+          <div class="row">
+            <div class="col-md-8 m-auto">
+              <div class="special-heading m-b-40">
+                <h4>The Rough Rulez</h4>
+              </div>
+              <!-- Accordion card-body-->
+              <div class="accordion panel-group" id="accordion">
+                <div class="card">
+                  <div class="card-header">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false">
+                      General Weight Loss Gainz
+                    </a>
+                  </div>
+                  <div class="collapse show" id="collapse4">
+                    <div class="card-body">
+                      <h4>3 Upper Body Exercises</h4>
+                      <p>
+                        Choose one pulling exercise like a pull up or row and then choose one pushing exercise like push
+                        ups or overhead press. Your third exercise could be any accessory exercise you'd like to work.
+                        Triceps push down, biceps curl, lateral raises, etc. Stick to 3 sets of 8-10 to start.
+                      </p>
+                      <h4>3 Lower Body Exercises</h4>
+                      <p>
+                        Choose one knee-dominant lower body exercise like a squat or lunge then choose one hip dominant
+                        exercise like a Romanian Deadlift or conventional deadlift. Your third choice could be an
+                        accessory like single leg squats or hip bridges. Stick to 3 sets of 8-10 to start.
+                      </p>
+                      <h4>2 Core Exercises</h4>
+                      <p>
+                        Choose two core exercises that complement each other like the pallof press and the plank. Any
+                        corework that requires a hold (any plank variation) should be held between 20-30 seconds. If the
+                        exercise requires reps, again, stick to 3 sets of 8-10. Core exercises can be done in between
+                        sets of your upper and lower body sets to save time.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <!-- Tabs-->
-                <ul class="nav nav-tabs justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#tab-7" data-toggle="tab">General Weight Loss GAINZ</a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link" href="#tab-8" data-toggle="tab">Strong GAINZ</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#tab-9" data-toggle="tab">Big GAINZ</a></li>
-                </ul>
-                <div class="tab-content">
-                  <div class="tab-pane in active" id="tab-7">
-                    <h4>3 Upper Body Exercises</h4>
-                    <p>
-                      Choose one pulling exercise like a pull up or row and then choose one pushing exercise like push
-                      ups or overhead press. Your third exercise could be any accessory exercise you'd like to work.
-                      Triceps push down, biceps curl, lateral raises, etc. Stick to 3 sets of 8-10 to start.
-                    </p>
-                    <h4>3 Lower Body Exercises</h4>
-                    <p>
-                      Choose one knee-dominant lower body exercise like a squat or lunge then choose one hip dominant
-                      exercise like a Romanian Deadlift or conventional deadlift. Your third choice could be an
-                      accessory like single leg squats or hip bridges. Stick to 3 sets of 8-10 to start.
-                    </p>
-                    <h4>2 Core Exercises</h4>
-                    <p>
-                      Choose two core exercises that complement each other like the pallof press and the plank. Any
-                      corework that requires a hold (any plank variation) should be held between 20-30 seconds. If the
-                      exercise requires reps, again, stick to 3 sets of 8-10. Core exercises can be done in between sets
-                      of your upper and lower body sets to save time.
-                    </p>
+                <div class="card">
+                  <div class="card-header">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false">
+                      Strength Gainz
+                    </a>
                   </div>
-                  <div class="tab-pane" id="tab-8">
-                    <p>
-                      Day handsome addition horrible sensible goodness two contempt. Evening for married his account
-                      removal. Estimable me disposing of be moonlight cordially curiosity. Delay rapid joy share allow
-                      age manor six. Went why far saw many knew.
-                    </p>
-                    <p>
-                      At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande
-                      lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-                      coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan
-                      lingues.
-                    </p>
+                  <div class="collapse" id="collapse5">
+                    <div class="card-body">
+                      <p>
+                        Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer
+                        elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.
+                        Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone
+                        Kickstarter, drinking vinegar jean shorts fixie consequat flexitarian four loko.
+                      </p>
+                      <p>
+                        Day handsome addition horrible sensible goodness two contempt. Evening for married his account
+                        removal. Estimable me disposing of be moonlight cordially curiosity. Delay rapid joy share allow
+                        age manor six. Went why far saw many knew.
+                      </p>
+                    </div>
                   </div>
-                  <div class="tab-pane" id="tab-9">
-                    <p>
-                      Day handsome addition horrible sensible goodness two contempt. Evening for married his account
-                      removal. Estimable me disposing of be moonlight cordially curiosity. Delay rapid joy share allow
-                      age manor six. Went why far saw many knew.
-                    </p>
-                    <p>
-                      Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit
-                      seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip
-                      veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone Kickstarter,
-                      drinking vinegar jean shorts fixie consequat flexitarian four loko.
-                    </p>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false">
+                      Big Gainz
+                    </a>
+                  </div>
+                  <div class="collapse" id="collapse5">
+                    <div class="card-body">
+                      <p>
+                        Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer
+                        elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.
+                        Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone
+                        Kickstarter, drinking vinegar jean shorts fixie consequat flexitarian four loko.
+                      </p>
+                      <p>
+                        Day handsome addition horrible sensible goodness two contempt. Evening for married his account
+                        removal. Estimable me disposing of be moonlight cordially curiosity. Delay rapid joy share allow
+                        age manor six. Went why far saw many knew.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- <section class="module">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="alert alert-brand">
-                    <strong>Heads up!</strong>
-                    This alert needs
-                    <a class="alert-link" href="#">your attention</a>
-                    , but it's not super important.
-                  </div>
-                  <div class="alert alert-success">
-                    <strong>Well done!</strong>
-                    <p v-if="counts === 'UpperSolid'"></p>
-                    You built a balanced workout! GO GET AFTER IT!
-                  </div>
-                  <div class="alert alert-info">
-                    <strong>Heads up!</strong>
-                    This alert needs
-                    <a class="alert-link" href="#">your attention</a>
-                    , but it's not super important.
-                  </div>
-                  <div class="alert alert-warning">
-                    <strong>Warning!</strong>
-                    Better check yourself,
-                    <a class="alert-link" href="#">you're not</a>
-                    looking too good.
-                  </div>
-                  <div class="alert alert-danger">
-                    <strong>DO YOU EVEN LIFT?!</strong>
-                    <p v-if="counts === 'BAD'">Awful!</p>
-                    Don't forget your 2 core and 3 upper and lower body exercises!
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> -->
-
-          <!-- Forms-->
-
           <div>
-            <p v-if="counts.upper >= 3">Hit the required upper body goals!</p>
-            <p v-if="counts.upper === 2">One upper body exercise away.</p>
-            <p v-if="counts.upper < 2">You need 3 upper body exercises.</p>
+            <p class="alert alert-success" v-if="counts.upper >= 3">Hit the required upper body goals!</p>
+            <p class="alert alert-warning" v-if="counts.upper === 2">One upper body exercise away.</p>
+            <p class="alert alert-danger" v-if="counts.upper === 1">You need 3 upper body exercises.</p>
           </div>
 
           <div>
-            <p v-if="counts.lower >= 3">Those legs got some work to do!</p>
-            <p v-if="counts.lower === 2">One more lower body exercise away!</p>
-            <p v-if="counts.lower < 2">3 lower body exercises required. No chicken legs!</p>
+            <p class="alert alert-success" v-if="counts.lower >= 3">Those legs got some work to do!</p>
+            <p class="alert alert-warning" v-if="counts.lower === 2">One more lower body exercise away!</p>
+            <p class="alert alert-danger" v-if="counts.lower === 1">
+              3 lower body exercises required. No chicken legs!
+            </p>
           </div>
           <div>
-            <p v-if="counts.core >= 2">Core is noice and toight!</p>
-            <p v-if="counts.core === 1">One more core exercise needed.</p>
-            <p v-if="counts.core < 1">You need 2 core exercises!</p>
+            <p class="alert alert-success" v-if="counts.core >= 2">Core is noice and toight!</p>
+            <p class="alert alert-warning" v-if="counts.core === 1">One more core exercise needed.</p>
+            <p class="alert alert-danger" v-if="counts.core < 0">You need 2 core exercises!</p>
           </div>
           <div>
-            <p v-if="counts.core === 2 && counts.lower === 3 && counts.upper">THAT'S A SOLID WORKOUT, YO!</p>
+            <h2 class="alert alert-brand" v-if="counts.core === 2 && counts.lower === 3 && counts.upper === 3">
+              THAT'S A SOLID WORKOUT, YO!
+            </h2>
           </div>
           <div class="row m-b-50">
             <div class="special heading">
@@ -169,10 +152,15 @@
                       class="col-md-8 m-auto"
                     >
                       <div class="special-heading">
-                        <h1>{{ exercise.name }}</h1>
-                        <input type="checkbox" v-model="exercise.selected" />
-                        <div>
-                          <h4>{{ exercise.category }}</h4>
+                        <div class="form-check">
+                          <label class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" v-model="exercise.selected" />
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">
+                              <h2>{{ exercise.name }}</h2>
+                            </span>
+                          </label>
+                          <h5>{{ exercise.category }}</h5>
                         </div>
                       </div>
                       <p>
@@ -211,8 +199,7 @@
                               <p>{{ exercise.description }}</p>
                             </div>
                             <div class="modal-footer">
-                              <button class="btn btn-round btn-gray" type="button">Close</button>
-                              <button class="btn btn-round btn-brand" type="button">Save changes</button>
+                              You're gonna be great at this.
                             </div>
                           </div>
                         </div>
@@ -322,30 +309,6 @@ export default {
       });
 
       return { upper, lower, core };
-
-      // if (upper >= 3) {
-      //   return "UpperSolid";
-      // } else if (upper === 2) {
-      //   return "OneMoreUpper";
-      // } else if (upper <= 1) {
-      //   return "MoreUpper";
-      // } else if (lower >= 3) {
-      //   return "LowerSolid";
-      // } else if (lower === 2) {
-      //   return "OneMoreLower";
-      // } else if (lower <= 1) {
-      //   return "MoreLower";
-      // } else if (core >= 2) {
-      //   return "CoreSolid";
-      // } else if (core === 1) {
-      //   return "OneMoreCore";
-      // } else if (core < 1) {
-      //   return "MoreCore";
-      // } else if (upper === 3 && lower === 3 && core === 2) {
-      //   return "Balance";
-      // } else {
-      //   return "TryHarder";
-      // }
     }
   }
 };
