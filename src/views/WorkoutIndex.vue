@@ -47,10 +47,10 @@
                 <div class="input-group-addon">WEIGHT</div>
                 <input class="form-control" id="inlineFormInputGroup" type="text" v-model="workout.weight" />
               </div>
-              <button v-on:click="completeExercise(workout)" class="btn btn-round btn-brand">
+              <button style="margin: 10px" v-on:click="completeExercise(workout)" class="btn btn-round btn-brand">
                 COMPLETED
               </button>
-              -
+
               <button v-on:click="destroyExercise(workout)" class="btn btn-round btn-brand">Delete</button>
             </form>
           </div>

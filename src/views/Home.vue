@@ -171,7 +171,7 @@
               <div class="col-md-4">
                 <div class="team-item m-b-30">
                   <div class="team-image">
-                    <img src="assets/images/OK_Dwayne.jpg" alt="" />
+                    <img style="height: 525px; width:325px" src="assets/images/OK_Dwayne.jpg" alt="" />
                     <div class="team-content">
                       <h5>Dwayne Johnson</h5>
                       <p>The Rock</p>
