@@ -98,7 +98,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="upperBod">
             <p class="alert alert-success" v-if="counts.upper >= 3">Okay Upper Body! I see you!</p>
             <p class="alert alert-warning" v-if="counts.upper === 2">
               One more upper body exercise away from actualization.
@@ -108,7 +108,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="lowerBod">
             <p class="alert alert-success" v-if="counts.lower >= 3">
               Those stems of yours are on the path of mightiness.
             </p>
@@ -119,14 +119,14 @@
               You need 3 lower body exercises! No chicken legs!
             </p>
           </div>
-          <div>
+          <div class="coreBod">
             <p class="alert alert-success" v-if="counts.core >= 2">
               Your abdominal wall is on it's way to legend status!
             </p>
             <p class="alert alert-warning" v-if="counts.core === 1">One. More. Core.</p>
             <p class="alert alert-danger" v-if="counts.core < 0">You need 2 core exercises!</p>
           </div>
-          <div>
+          <div id="theEnd" class="workoutWinner">
             <h2 class="alert alert-brand" v-if="counts.core === 2 && counts.lower === 3 && counts.upper === 3">
               YOU WIN THE WORKOUT!
             </h2>
@@ -214,7 +214,7 @@
                           </div>
                         </div>
                       </div>
-                      <form class="form-inline">
+                      <form class="form-inline" style="padding-bottom: 80px;">
                         <ul>
                           <li v-for="error in errors">{{ error }}</li>
                         </ul>
@@ -255,10 +255,27 @@
 </template>
 
 <style>
-.alert {
+.upperBod {
+  position: fixed;
+  top: 8em;
+  z-index: 1;
+}
+
+.lowerBod {
   position: fixed;
   top: 4em;
-  z-index: 100;
+  z-index: 1;
+}
+
+.coreBod {
+  position: fixed;
+  top: 12em;
+  z-index: 1;
+}
+.workoutWinner {
+  position: fixed;
+  top: 8em;
+  z-index: 2;
 }
 </style>
 

@@ -21,7 +21,7 @@
                       <a
                         class="btn btn-circle btn-lg btn-dark wow fadeInDown"
                         data-wow-delay="0.9s"
-                        href="/your_workout"
+                        href="/create_workout"
                       >
                         Unlock the secret formula.
                       </a>
@@ -44,7 +44,7 @@
                       <a
                         class="btn btn-circle btn-lg btn-dark wow fadeInDown"
                         data-wow-delay="0.9s"
-                        href="/your_workout"
+                        href="/create_workout"
                       >
                         Unlock the secret formula.
                       </a>
@@ -199,68 +199,6 @@
           </div>
         </section>
         <!-- Team end-->
-
-        <!-- Services-->
-        <section class="module" id="about">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="icon-box text-center">
-                  <div class="icon-box-icon"><span class="icon icon-basic-pencil-ruler"></span></div>
-                  <div class="icon-box-title">
-                    <h6>Excellent Designs</h6>
-                  </div>
-                  <div class="icon-box-content">
-                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="icon-box-link"><a href="#">Take a tour</a></div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="icon-box text-center">
-                  <div class="icon-box-icon"><span class="icon icon-basic-paperplane"></span></div>
-                  <div class="icon-box-title">
-                    <h6>Fully Responsive</h6>
-                  </div>
-                  <div class="icon-box-content">
-                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="icon-box-link"><a href="#">Take a tour</a></div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="icon-box text-center">
-                  <div class="icon-box-icon"><span class="icon icon-basic-heart"></span></div>
-                  <div class="icon-box-title">
-                    <h6>User Friendly</h6>
-                  </div>
-                  <div class="icon-box-content">
-                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="icon-box-link"><a href="#">Take a tour</a></div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="icon-box text-center">
-                  <div class="icon-box-icon"><span class="icon icon-basic-server-download"></span></div>
-                  <div class="icon-box-title">
-                    <h6>Free Updates</h6>
-                  </div>
-                  <div class="icon-box-content">
-                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="icon-box-link"><a href="#">Take a tour</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="m-b-100"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Services end-->
 
         <!-- News-->
         <section class="module" id="blog">

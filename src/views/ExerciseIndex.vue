@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="row m-b-100">
+          <div class="row m-b-100" style="padding-bottom: 100px;">
             <div v-for="exercise in filterBy(exercises, searchFilter, 'category', 'name')" class="col-md-8 m-auto">
               <div class="special-heading">
                 <h2>{{ exercise.name }}</h2>
