@@ -99,26 +99,36 @@
           </div>
 
           <div>
-            <p class="alert alert-success" v-if="counts.upper >= 3">Hit the required upper body goals!</p>
-            <p class="alert alert-warning" v-if="counts.upper === 2">One upper body exercise away.</p>
-            <p class="alert alert-danger" v-if="counts.upper === 1">You need 3 upper body exercises.</p>
+            <p class="alert alert-success" v-if="counts.upper >= 3">Okay Upper Body! I see you!</p>
+            <p class="alert alert-warning" v-if="counts.upper === 2">
+              One more upper body exercise away from actualization.
+            </p>
+            <p class="alert alert-danger" v-if="counts.upper === 1">
+              DO YOU EVEN LIFT!? You need 3 upper body exercises.
+            </p>
           </div>
 
           <div>
-            <p class="alert alert-success" v-if="counts.lower >= 3">Those legs got some work to do!</p>
-            <p class="alert alert-warning" v-if="counts.lower === 2">One more lower body exercise away!</p>
+            <p class="alert alert-success" v-if="counts.lower >= 3">
+              Those stems of yours are on the path of mightiness.
+            </p>
+            <p class="alert alert-warning" v-if="counts.lower === 2">
+              Those legs need one more exercise to feel complete.
+            </p>
             <p class="alert alert-danger" v-if="counts.lower === 1">
-              3 lower body exercises required. No chicken legs!
+              You need 3 lower body exercises! No chicken legs!
             </p>
           </div>
           <div>
-            <p class="alert alert-success" v-if="counts.core >= 2">Core is noice and toight!</p>
-            <p class="alert alert-warning" v-if="counts.core === 1">One more core exercise needed.</p>
+            <p class="alert alert-success" v-if="counts.core >= 2">
+              Your abdominal wall is on it's way to legend status!
+            </p>
+            <p class="alert alert-warning" v-if="counts.core === 1">One. More. Core.</p>
             <p class="alert alert-danger" v-if="counts.core < 0">You need 2 core exercises!</p>
           </div>
           <div>
             <h2 class="alert alert-brand" v-if="counts.core === 2 && counts.lower === 3 && counts.upper === 3">
-              THAT'S A SOLID WORKOUT, YO!
+              YOU WIN THE WORKOUT!
             </h2>
           </div>
           <div class="row m-b-50">
@@ -244,7 +254,13 @@
   </div>
 </template>
 
-<style></style>
+<style>
+.alert {
+  position: fixed;
+  top: 4em;
+  z-index: 100;
+}
+</style>
 
 <script>
 import axios from "axios";

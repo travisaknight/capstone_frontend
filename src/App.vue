@@ -22,9 +22,10 @@
                   <li><router-link to="/create_workout">Create A Workout</router-link></li>
                   <li><router-link to="/your_workout">Your Workout</router-link></li>
                   <li><router-link to="/exercises">Exercises</router-link></li>
+                  <li><router-link to="/workout_calendar">Workout Calendar</router-link></li>
                   <li><router-link to="/login">Login</router-link></li>
-                  <li><a href="#team">Logout</a></li>
-                  <li><a href="#services">Signup</a></li>
+                  <li><router-link to="/logout">Logout</router-link></li>
+                  <li><router-link to="/signup">Signup</router-link></li>
                   <!-- Button-->
                   <li>
                     <!-- <a class="nav-btn external" href="#">
