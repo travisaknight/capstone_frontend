@@ -106,7 +106,7 @@ export default {
     setupChart: function() {
       console.log("setupChart", this.completes);
       var items = this.completes;
-      var labels = items.map(item => item.created_at);
+      var labels = items.map(item => item.created_at_calendar);
       // var data = items.map(item => item.reps);
       var exercises = items.map(item => item.exercise).filter((v, i, a) => a.indexOf(v) === i);
       var datasets = exercises.map(exercise => ({
@@ -153,11 +153,6 @@ export default {
               scales: {
                 yAxes: [
                   {
-                    // type: "time",
-                    // time: {
-                    //   unit: "month"
-                    // },
-
                     ticks: {
                       beginAtZero: true
                     }
