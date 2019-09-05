@@ -1,5 +1,19 @@
 <template>
   <div class="layout">
+    <section
+      class="module-header full-height parallax bg-dark bg-dark-60"
+      data-background="assets/images/contemplate.jpg"
+    >
+      <div id="particles-js"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="h1">You're killin the game out there.</h1>
+            <h1 class="h1 m-b-15">Be proud of your GAINZ</h1>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="wrapper">
       <section class="module">
         <div class="container">

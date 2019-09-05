@@ -28,25 +28,32 @@
                   </div>
                   <div class="collapse show" id="collapse4">
                     <div class="card-body">
-                      <h4>3 Upper Body Exercises</h4>
+                      <h3>3 Upper Body Exercises</h3>
                       <p>
                         Choose one pulling exercise like a pull up or row and then choose one pushing exercise like push
                         ups or overhead press. Your third exercise could be any accessory exercise you'd like to work.
                         Triceps push down, biceps curl, lateral raises, etc. Stick to 3 sets of 8-10 to start.
                       </p>
-                      <h4>3 Lower Body Exercises</h4>
+                      <h3>3 Lower Body Exercises</h3>
                       <p>
                         Choose one knee-dominant lower body exercise like a squat or lunge then choose one hip dominant
                         exercise like a Romanian Deadlift or conventional deadlift. Your third choice could be an
                         accessory like single leg squats or hip bridges. Stick to 3 sets of 8-10 to start.
                       </p>
-                      <h4>2 Core Exercises</h4>
+                      <h3>2 Core Exercises</h3>
                       <p>
                         Choose two core exercises that complement each other like the pallof press and the plank. Any
                         corework that requires a hold (any plank variation) should be held between 20-30 seconds. If the
                         exercise requires reps, again, stick to 3 sets of 8-10. Core exercises can be done in between
                         sets of your upper and lower body sets to save time.
                       </p>
+                      <h4>The workout should flow as such:</h4>
+                      <ul>
+                        <li>Upper exercise</li>
+                        <li>Lower exercise</li>
+                        <li>Core exercise</li>
+                        <p>Rest for 60-90 seconds and repeat the circuit 3 more times.</p>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -58,16 +65,17 @@
                   </div>
                   <div class="collapse" id="collapse5">
                     <div class="card-body">
+                      <h3>Pick 1 compound movement: Deadlift, Squat, Bench, Overhead Press</h3>
                       <p>
-                        Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer
-                        elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.
-                        Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone
-                        Kickstarter, drinking vinegar jean shorts fixie consequat flexitarian four loko.
+                        After your warm up you will start your day with you strength exercise. You will perform 5 sets
+                        of 5 reps increasing the weight each set. Try to up your weight each week. If you're feeling
+                        like a champ on a given day go for as many reps as possible on your last set.
                       </p>
+                      <h3>Pick 2 Core exercises and 4 accessory exercises.</h3>
                       <p>
-                        Day handsome addition horrible sensible goodness two contempt. Evening for married his account
-                        removal. Estimable me disposing of be moonlight cordially curiosity. Delay rapid joy share allow
-                        age manor six. Went why far saw many knew.
+                        After you've completed your strength portion you're going to want to help solidfy the gainz
+                        made. Lower accessories would be hip bridges, deadlift variations, lunges, etc. Upper could be
+                        dumbbell incline, tricep pushdowns, dips, etc. Perform your accessories 4-5 sets for 10-12 reps.
                       </p>
                     </div>
                   </div>
@@ -80,16 +88,17 @@
                   </div>
                   <div class="collapse" id="collapse5">
                     <div class="card-body">
+                      <h3>Pick 1 compound movement: Deadlift, Squat, Bench, Overhead Press</h3>
                       <p>
-                        Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer
-                        elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.
-                        Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone
-                        Kickstarter, drinking vinegar jean shorts fixie consequat flexitarian four loko.
+                        Much like the strength GAINZ you want to start your day with a strength lift using the 5x5
+                        strategy from above.
                       </p>
+                      <h3>Pick 4 upper and 4 lower exercises. 3 core.</h3>
                       <p>
-                        Day handsome addition horrible sensible goodness two contempt. Evening for married his account
-                        removal. Estimable me disposing of be moonlight cordially curiosity. Delay rapid joy share allow
-                        age manor six. Went why far saw many knew.
+                        After you've completed your strenght GAINZ you'll perform your chosen accessories. The way you
+                        make size GAINZ is by picking a reasonable amount of weight and going to near failure. Usually
+                        in the 8-15 rep range. Perform the exercises as circuits and supersets. Lower, Upper, Core..
+                        rest.. repeat.
                       </p>
                     </div>
                   </div>
@@ -209,7 +218,7 @@
                               <p>{{ exercise.description }}</p>
                             </div>
                             <div class="modal-footer">
-                              You're gonna be great at this.
+                              <h3>You're gonna be great at this.</h3>
                             </div>
                           </div>
                         </div>

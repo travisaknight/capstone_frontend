@@ -64,10 +64,7 @@
                       </h3>
                       <p>{{ exercise.description }}</p>
                     </div>
-                    <div class="modal-footer">
-                      <button class="btn btn-round btn-gray" type="button">Close</button>
-                      <button class="btn btn-round btn-brand" type="button">Save changes</button>
-                    </div>
+                    <h4>Oh yeah... this a good one.</h4>
                   </div>
                 </div>
               </div>
