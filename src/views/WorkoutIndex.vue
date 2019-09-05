@@ -106,36 +106,49 @@ export default {
     setupChart: function() {
       console.log("setupChart", this.completes);
       var items = this.completes;
-      var labels = items.map(item => item.exercise);
-      var data = items.map(item => item.reps);
-      var time = items.map(item => item.created_at);
+      var labels = items.map(item => item.created_at);
+      // var data = items.map(item => item.reps);
+      var exercises = items.map(item => item.exercise).filter((v, i, a) => a.indexOf(v) === i);
+      var datasets = exercises.map(exercise => ({
+        label: exercise,
+        data: items.filter(item => item.exercise === exercise).map(item => ({ x: item.created_at, y: item.reps })),
+        borderColor: this.getRandomColor(),
+        backgroundColor: "rgba(74, 144, 226, 0)",
+        lineTension: 0,
+        hidden: true
+      }));
+      console.log("setupChart", exercises, datasets);
+      // var time = items.map(item => item.created_at);
       // var data = completedReps + items.map(item => item.reps);
+
+      var s1 = {
+        label: "s1",
+        borderColor: "blue",
+        data: [{ x: "2017-01-06 18:39:30", y: 100 }, { x: "2017-01-07 18:39:28", y: 101 }]
+      };
+
+      var s2 = {
+        label: "s2",
+        borderColor: "red",
+        data: [{ x: "2017-01-07 18:00:00", y: 90 }, { x: "2017-01-08 18:00:00", y: 105 }]
+      };
 
       $(".core-chart").each(function(workouts) {
         $(this).appear(function() {
           var ctx = $(this);
           var myChart = new Chart(ctx, {
-            type: "horizontalBar",
+            // type: "line",
+            // data: { datasets: [s1, s2] },
+
+            type: "line",
             data: {
               labels: labels,
-              datasets: [
-                {
-                  data: data,
-                  backgroundColor: [
-                    "rgba(74, 144, 226, 0.2)",
-                    "rgba(74, 144, 226, 0.2)",
-                    "rgba(74, 144, 226, 0.2)",
-                    "rgba(74, 144, 226, 0.2)",
-                    "rgba(74, 144, 226, 0.2)",
-                    "rgba(74, 144, 226, 0.2)"
-                  ],
-                  borderWidth: 2
-                }
-              ]
+              datasets: datasets
             },
             options: {
+              bezierCurve: false,
               legend: {
-                display: false
+                display: true
               },
               scales: {
                 yAxes: [
@@ -155,6 +168,15 @@ export default {
           });
         });
       });
+    },
+
+    getRandomColor: function() {
+      var letters = "0123456789ABCDEF".split("");
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
     },
     completeExercise: function(workout) {
       var params = {
